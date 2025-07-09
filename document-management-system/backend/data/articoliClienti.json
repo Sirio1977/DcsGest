@@ -1,0 +1,5110 @@
+[
+  {
+    "codice": "83",
+    "descrizione": "POLPA CONIGLIO CONG.",
+    "quantita": 25.1,
+    "prezzoUnitario": 12.5,
+    "importo": 313.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "02/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02162560201",
+      "ragioneSociale": "ANTICHI SAPORI SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-23",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "183",
+    "prezziStorico": [
+      {
+        "prezzo": 12.5,
+        "data": "2025-07-03",
+        "numeroFattura": "1"
+      },
+      {
+        "prezzo": 10.9,
+        "data": "2025-07-03",
+        "numeroFattura": "110"
+      }
+    ]
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 190.872,
+    "prezzoUnitario": 7.4,
+    "importo": 1412.45,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "02/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-26",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "224",
+    "prezziStorico": [
+      {
+        "prezzo": 6.9,
+        "data": "2025-07-03",
+        "numeroFattura": "2"
+      },
+      {
+        "prezzo": 7.1,
+        "data": "2025-07-03",
+        "numeroFattura": "189"
+      },
+      {
+        "prezzo": 7.2,
+        "data": "2025-07-03",
+        "numeroFattura": "220"
+      }
+    ]
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 16.8,
+    "prezzoUnitario": 7.15,
+    "importo": 120.12,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "02/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "107",
+    "prezziStorico": [
+      {
+        "prezzo": 8.9,
+        "data": "2025-07-03",
+        "numeroFattura": "2"
+      }
+    ]
+  },
+  {
+    "codice": "71",
+    "descrizione": "BUSTONI DI POLLO",
+    "quantita": 71.88,
+    "prezzoUnitario": 2.5,
+    "importo": 179.7,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "02/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "234",
+    "prezziStorico": [
+      {
+        "prezzo": 3.5,
+        "data": "2025-07-03",
+        "numeroFattura": "2"
+      }
+    ]
+  },
+  {
+    "codice": "72",
+    "descrizione": "FUSELLI POLLO",
+    "quantita": 4.134,
+    "prezzoUnitario": 4.1,
+    "importo": 16.95,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "02/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "145",
+    "prezziStorico": [
+      {
+        "prezzo": 4.2,
+        "data": "2025-07-03",
+        "numeroFattura": "2"
+      }
+    ]
+  },
+  {
+    "codice": "101",
+    "descrizione": "BOCCONCINI DI POLLO",
+    "quantita": 2,
+    "prezzoUnitario": 14.9,
+    "importo": 29.8,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01540360235",
+      "ragioneSociale": "SCUOLA DELL  INFANZIA S MARIA GORETTI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "3",
+    "prezziStorico": []
+  },
+  {
+    "codice": "b33",
+    "descrizione": "MACINATO MISTO",
+    "quantita": 2.2,
+    "prezzoUnitario": 10.3,
+    "importo": 22.66,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01540360235",
+      "ragioneSociale": "SCUOLA DELL  INFANZIA S MARIA GORETTI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "134",
+    "prezziStorico": [
+      {
+        "prezzo": 9.9,
+        "data": "2025-07-03",
+        "numeroFattura": "3"
+      },
+      {
+        "prezzo": 12.5,
+        "data": "2025-07-03",
+        "numeroFattura": "95"
+      }
+    ]
+  },
+  {
+    "codice": "11",
+    "descrizione": "MACINATO DI TACCHINO",
+    "quantita": 2.2,
+    "prezzoUnitario": 18.9,
+    "importo": 41.58,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01540360235",
+      "ragioneSociale": "SCUOLA DELL  INFANZIA S MARIA GORETTI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "3",
+    "prezziStorico": []
+  },
+  {
+    "codice": "109",
+    "descrizione": "BISTECCHE DI TACCHINO",
+    "quantita": 2.09,
+    "prezzoUnitario": 18.9,
+    "importo": 39.5,
+    "unitaMisura": "PZ",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01540360235",
+      "ragioneSociale": "SCUOLA DELL  INFANZIA S MARIA GORETTI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "95",
+    "prezziStorico": [
+      {
+        "prezzo": 17.6,
+        "data": "2025-07-03",
+        "numeroFattura": "3"
+      }
+    ]
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 2.908,
+    "prezzoUnitario": 7.9,
+    "importo": 22.97,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01985440237",
+      "ragioneSociale": "PANIFICIO F LLI CERIANI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-07",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "4",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S22",
+    "descrizione": "PESTO SUINO MANTOVANO",
+    "quantita": 1.098,
+    "prezzoUnitario": 10.9,
+    "importo": 11.97,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01985440237",
+      "ragioneSociale": "PANIFICIO F LLI CERIANI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-07",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "4",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S18",
+    "descrizione": "SALSICCIA DI SUINO",
+    "quantita": 1.04,
+    "prezzoUnitario": 10.9,
+    "importo": 11.34,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01985440237",
+      "ragioneSociale": "PANIFICIO F LLI CERIANI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-07",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "4",
+    "prezziStorico": []
+  },
+  {
+    "codice": "b33",
+    "descrizione": "MACINATO MISTO",
+    "quantita": 2.4,
+    "prezzoUnitario": 11.36,
+    "importo": 27.26,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01985440237",
+      "ragioneSociale": "PANIFICIO F LLI CERIANI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "219",
+    "prezziStorico": [
+      {
+        "prezzo": 8.5,
+        "data": "2025-07-03",
+        "numeroFattura": "4"
+      },
+      {
+        "prezzo": 11,
+        "data": "2025-07-03",
+        "numeroFattura": "178"
+      }
+    ]
+  },
+  {
+    "codice": "53",
+    "descrizione": "POLPA ANATRA CONGELATA",
+    "quantita": 6.3,
+    "prezzoUnitario": 17.9,
+    "importo": 112.77,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03707440230",
+      "ragioneSociale": "RISO MELOTTI SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-27",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "7",
+    "prezziStorico": []
+  },
+  {
+    "codice": "83",
+    "descrizione": "POLPA CONIGLIO CONG.",
+    "quantita": 10.85,
+    "prezzoUnitario": 16.5,
+    "importo": 179.03,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "07/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03707440230",
+      "ragioneSociale": "RISO MELOTTI SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-27",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "75",
+    "prezziStorico": [
+      {
+        "prezzo": 15.5,
+        "data": "2025-07-03",
+        "numeroFattura": "7"
+      }
+    ]
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 1.7,
+    "prezzoUnitario": 9.9,
+    "importo": 16.83,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "9",
+    "prezziStorico": []
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 11.576,
+    "prezzoUnitario": 6.5,
+    "importo": 75.24,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "9",
+    "prezziStorico": []
+  },
+  {
+    "codice": "7",
+    "descrizione": "FEGATI POLLO",
+    "quantita": 1.038,
+    "prezzoUnitario": 3.9,
+    "importo": 4.05,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-03",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "9",
+    "prezziStorico": []
+  },
+  {
+    "codice": "53",
+    "descrizione": "POLPA ANATRA CONGELATA",
+    "quantita": 6.276,
+    "prezzoUnitario": 17.9,
+    "importo": 112.34,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-15",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "9",
+    "prezziStorico": []
+  },
+  {
+    "codice": "17",
+    "descrizione": "FARAONE",
+    "quantita": 5.35,
+    "prezzoUnitario": 8.7,
+    "importo": 46.55,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "9",
+    "prezziStorico": []
+  },
+  {
+    "codice": "83",
+    "descrizione": "POLPA CONIGLIO CONG.",
+    "quantita": 2.85,
+    "prezzoUnitario": 16.5,
+    "importo": 47.03,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-15",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "9",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B01",
+    "descrizione": "COPERTINA BOVINO",
+    "quantita": 8.11,
+    "prezzoUnitario": 15.364,
+    "importo": 124.6,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04546350234",
+      "ragioneSociale": "RAFFYLU  S R L S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-12",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "60",
+    "prezziStorico": [
+      {
+        "prezzo": 17.18,
+        "data": "2025-07-03",
+        "numeroFattura": "10"
+      }
+    ]
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 5.798,
+    "prezzoUnitario": 13.54,
+    "importo": 78.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04546350234",
+      "ragioneSociale": "RAFFYLU  S R L S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-09",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "10",
+    "prezziStorico": []
+  },
+  {
+    "codice": "E98",
+    "descrizione": "OLIO EXTRAVERGINE SPRAY",
+    "quantita": 1,
+    "prezzoUnitario": 6.731,
+    "importo": 6.73,
+    "unitaMisura": "NR",
+    "dataUltimaModifica": "09/01/2025",
+    "aliquotaIVA": 4,
+    "cliente": {
+      "partitaIva": "04546350234",
+      "ragioneSociale": "RAFFYLU  S R L S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-12",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "60",
+    "prezziStorico": [
+      {
+        "prezzo": 3.1,
+        "data": "2025-07-03",
+        "numeroFattura": "10"
+      }
+    ]
+  },
+  {
+    "codice": "Totali",
+    "descrizione": "ACCONTO FORNITURA PER EVENTO",
+    "quantita": 1,
+    "prezzoUnitario": 727.27,
+    "importo": 727.27,
+    "unitaMisura": "PZ",
+    "dataUltimaModifica": "10/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04518980232",
+      "ragioneSociale": "STUDIO CHIARAMONTE S R L  UNIPERSONALE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-17",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "11",
+    "prezziStorico": []
+  },
+  {
+    "codice": "101",
+    "descrizione": "SOVRACOSCE POLLO",
+    "quantita": 9.07,
+    "prezzoUnitario": 4.1,
+    "importo": 37.19,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "13/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "213",
+    "prezziStorico": [
+      {
+        "prezzo": 4.2,
+        "data": "2025-07-03",
+        "numeroFattura": "12"
+      },
+      {
+        "prezzo": 4.1,
+        "data": "2025-07-03",
+        "numeroFattura": "145"
+      },
+      {
+        "prezzo": 4.7,
+        "data": "2025-07-03",
+        "numeroFattura": "195"
+      }
+    ]
+  },
+  {
+    "codice": "91",
+    "descrizione": "POLLO BUSTO 1000",
+    "quantita": 60.4,
+    "prezzoUnitario": 3.9,
+    "importo": 235.56,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "14/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02571540208",
+      "ragioneSociale": "IN SALITA SNC DI MAGNANI GINO E ZAHRA ANIF",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-07",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "108",
+    "prezziStorico": [
+      {
+        "prezzo": 3.8,
+        "data": "2025-07-03",
+        "numeroFattura": "13"
+      }
+    ]
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 34.81,
+    "prezzoUnitario": 3.6,
+    "importo": 125.32,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "14/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02571540208",
+      "ragioneSociale": "IN SALITA SNC DI MAGNANI GINO E ZAHRA ANIF",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-07",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "13",
+    "prezziStorico": []
+  },
+  {
+    "codice": "3",
+    "descrizione": "PELLE POLLO",
+    "quantita": 18.27,
+    "prezzoUnitario": 0.3,
+    "importo": 5.48,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "14/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02571540208",
+      "ragioneSociale": "IN SALITA SNC DI MAGNANI GINO E ZAHRA ANIF",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-04",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "13",
+    "prezziStorico": []
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 0.618,
+    "prezzoUnitario": 9.5,
+    "importo": 5.87,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "16/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-16",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "15",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B40",
+    "descrizione": "HAMBURGER DI BOVINO",
+    "quantita": 0.55,
+    "prezzoUnitario": 16.5,
+    "importo": 9.08,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "16/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-13",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "15",
+    "prezziStorico": []
+  },
+  {
+    "codice": "3",
+    "descrizione": "SVIZZERE DI POLLO",
+    "quantita": 0.5,
+    "prezzoUnitario": 16.9,
+    "importo": 8.45,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "16/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-13",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "64",
+    "prezziStorico": [
+      {
+        "prezzo": 16.9,
+        "data": "2025-07-03",
+        "numeroFattura": "15"
+      },
+      {
+        "prezzo": 9.9,
+        "data": "2025-07-03",
+        "numeroFattura": "55"
+      }
+    ]
+  },
+  {
+    "codice": "B31",
+    "descrizione": "BAVETTA BOVINO",
+    "quantita": 8.84,
+    "prezzoUnitario": 15.9,
+    "importo": 140.56,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "16/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02577240209",
+      "ragioneSociale": "TRATTORIA ALLA TORRE DI ROBERTO RAMBALDO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-25",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "230",
+    "prezziStorico": [
+      {
+        "prezzo": 10.9,
+        "data": "2025-07-03",
+        "numeroFattura": "16"
+      },
+      {
+        "prezzo": 11.5,
+        "data": "2025-07-03",
+        "numeroFattura": "105"
+      },
+      {
+        "prezzo": 11.9,
+        "data": "2025-07-03",
+        "numeroFattura": "156"
+      }
+    ]
+  },
+  {
+    "codice": "17",
+    "descrizione": "FARAONE",
+    "quantita": 9.315,
+    "prezzoUnitario": 8.2,
+    "importo": 76.38,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "16/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02577240209",
+      "ragioneSociale": "TRATTORIA ALLA TORRE DI ROBERTO RAMBALDO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-25",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "16",
+    "prezziStorico": []
+  },
+  {
+    "codice": "E11",
+    "descrizione": "FORNITURA PER EVENTO RETAIL",
+    "quantita": 1,
+    "prezzoUnitario": 445.45,
+    "importo": 445.45,
+    "unitaMisura": "PZ",
+    "dataUltimaModifica": "21/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01337600215",
+      "ragioneSociale": "ALTROMERCATO IMPRESA SOCIALE SOC  COOP",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-21",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "20",
+    "prezziStorico": [
+      {
+        "prezzo": 218.18,
+        "data": "2025-07-03",
+        "numeroFattura": "19"
+      }
+    ]
+  },
+  {
+    "codice": "107",
+    "descrizione": "ROTOLI DI POLLO",
+    "quantita": 25.94,
+    "prezzoUnitario": 6.9,
+    "importo": 178.99,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "23/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02757970237",
+      "ragioneSociale": "CASA MOLON",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-23",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "23",
+    "prezziStorico": []
+  },
+  {
+    "codice": "50",
+    "descrizione": "ALETTE POLLO",
+    "quantita": 10,
+    "prezzoUnitario": 2.95,
+    "importo": 29.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "23/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04780680239",
+      "ragioneSociale": "MACELLO PUBBLICO DI ZANOTTO PAOLO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-12",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "24",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S17",
+    "descrizione": "COTECHINO",
+    "quantita": 1.292,
+    "prezzoUnitario": 10.9,
+    "importo": 14.08,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "24/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02577240209",
+      "ragioneSociale": "TRATTORIA ALLA TORRE DI ROBERTO RAMBALDO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-24",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "25",
+    "prezziStorico": []
+  },
+  {
+    "codice": "14",
+    "descrizione": "COSCETTE POLLO",
+    "quantita": 35.93,
+    "prezzoUnitario": 4,
+    "importo": 143.72,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "27/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "234",
+    "prezziStorico": [
+      {
+        "prezzo": 4.75,
+        "data": "2025-07-03",
+        "numeroFattura": "26"
+      },
+      {
+        "prezzo": 4.45,
+        "data": "2025-07-03",
+        "numeroFattura": "220"
+      }
+    ]
+  },
+  {
+    "codice": "S17",
+    "descrizione": "COTECHINO",
+    "quantita": 13.5,
+    "prezzoUnitario": 11.5,
+    "importo": 155.25,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04216960239",
+      "ragioneSociale": "RISTORANTE AI TRE VOLTI DI BUSCARDO LORELLA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "28",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B20",
+    "descrizione": "TRONCHETTO FIORENTINA",
+    "quantita": 3.1,
+    "prezzoUnitario": 24.5,
+    "importo": 75.95,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04216960239",
+      "ragioneSociale": "RISTORANTE AI TRE VOLTI DI BUSCARDO LORELLA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-14",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "77",
+    "prezziStorico": [
+      {
+        "prezzo": 23.5,
+        "data": "2025-07-03",
+        "numeroFattura": "28"
+      }
+    ]
+  },
+  {
+    "codice": "B30",
+    "descrizione": "COSTATE BOVINO",
+    "quantita": 5.5,
+    "prezzoUnitario": 24.5,
+    "importo": 134.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04216960239",
+      "ragioneSociale": "RISTORANTE AI TRE VOLTI DI BUSCARDO LORELLA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "196",
+    "prezziStorico": [
+      {
+        "prezzo": 24.5,
+        "data": "2025-07-03",
+        "numeroFattura": "28"
+      },
+      {
+        "prezzo": 23.5,
+        "data": "2025-07-03",
+        "numeroFattura": "77"
+      },
+      {
+        "prezzo": 24.5,
+        "data": "2025-07-03",
+        "numeroFattura": "104"
+      },
+      {
+        "prezzo": 22.5,
+        "data": "2025-07-03",
+        "numeroFattura": "192"
+      }
+    ]
+  },
+  {
+    "codice": "B30",
+    "descrizione": "COSTATE BOVINO",
+    "quantita": 6.33,
+    "prezzoUnitario": 22.5,
+    "importo": 142.43,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "78",
+    "prezziStorico": [
+      {
+        "prezzo": 20.5,
+        "data": "2025-07-03",
+        "numeroFattura": "29"
+      }
+    ]
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 8.745,
+    "prezzoUnitario": 9.5,
+    "importo": 83.08,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "30",
+    "prezziStorico": []
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 11.92,
+    "prezzoUnitario": 4.95,
+    "importo": 59,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "30",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 11.176,
+    "prezzoUnitario": 8.1,
+    "importo": 90.53,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "30",
+    "prezziStorico": []
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 8.183,
+    "prezzoUnitario": 10.35,
+    "importo": 84.69,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "79",
+    "prezziStorico": [
+      {
+        "prezzo": 10.25,
+        "data": "2025-07-03",
+        "numeroFattura": "30"
+      }
+    ]
+  },
+  {
+    "codice": "14",
+    "descrizione": "COSCETTE POLLO",
+    "quantita": 8.67,
+    "prezzoUnitario": 4.95,
+    "importo": 42.92,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "30",
+    "prezziStorico": []
+  },
+  {
+    "codice": "33",
+    "descrizione": "GALLETTO CONG.",
+    "quantita": 20.02,
+    "prezzoUnitario": 7.2,
+    "importo": 144.14,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "30",
+    "prezziStorico": []
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 8.067,
+    "prezzoUnitario": 10.35,
+    "importo": 83.49,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04903470237",
+      "ragioneSociale": "BAULI RETAIL S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "120",
+    "prezziStorico": [
+      {
+        "prezzo": 9.73,
+        "data": "2025-07-03",
+        "numeroFattura": "31"
+      },
+      {
+        "prezzo": 10.25,
+        "data": "2025-07-03",
+        "numeroFattura": "80"
+      }
+    ]
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 15.548,
+    "prezzoUnitario": 8.1,
+    "importo": 125.94,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04903470237",
+      "ragioneSociale": "BAULI RETAIL S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "31",
+    "prezziStorico": []
+  },
+  {
+    "codice": "101",
+    "descrizione": "SOVRACOSCE POLLO",
+    "quantita": 13.12,
+    "prezzoUnitario": 5.3,
+    "importo": 69.54,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04903470237",
+      "ragioneSociale": "BAULI RETAIL S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "31",
+    "prezziStorico": []
+  },
+  {
+    "codice": "72",
+    "descrizione": "FUSELLI POLLO",
+    "quantita": 9.32,
+    "prezzoUnitario": 5.3,
+    "importo": 49.4,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04903470237",
+      "ragioneSociale": "BAULI RETAIL S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "31",
+    "prezziStorico": []
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 13.3,
+    "prezzoUnitario": 9.5,
+    "importo": 126.35,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04903470237",
+      "ragioneSociale": "BAULI RETAIL S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "31",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 8.847,
+    "prezzoUnitario": 7.4,
+    "importo": 65.47,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01756530232",
+      "ragioneSociale": "CAPRINI TOMMASO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "239",
+    "prezziStorico": [
+      {
+        "prezzo": 7.2,
+        "data": "2025-07-03",
+        "numeroFattura": "32"
+      },
+      {
+        "prezzo": 6.7,
+        "data": "2025-07-03",
+        "numeroFattura": "122"
+      },
+      {
+        "prezzo": 7.1,
+        "data": "2025-07-03",
+        "numeroFattura": "201"
+      },
+      {
+        "prezzo": 7.3,
+        "data": "2025-07-03",
+        "numeroFattura": "239"
+      }
+    ]
+  },
+  {
+    "codice": "71",
+    "descrizione": "BUSTONI DI POLLO",
+    "quantita": 11.915,
+    "prezzoUnitario": 3.5,
+    "importo": 41.7,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01756530232",
+      "ragioneSociale": "CAPRINI TOMMASO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "201",
+    "prezziStorico": [
+      {
+        "prezzo": 3.3,
+        "data": "2025-07-03",
+        "numeroFattura": "32"
+      }
+    ]
+  },
+  {
+    "codice": "14",
+    "descrizione": "COSCETTE POLLO",
+    "quantita": 4.469,
+    "prezzoUnitario": 4.3,
+    "importo": 19.22,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01756530232",
+      "ragioneSociale": "CAPRINI TOMMASO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "201",
+    "prezziStorico": [
+      {
+        "prezzo": 4.1,
+        "data": "2025-07-03",
+        "numeroFattura": "32"
+      }
+    ]
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 1.775,
+    "prezzoUnitario": 8.5,
+    "importo": 15.09,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01756530232",
+      "ragioneSociale": "CAPRINI TOMMASO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "32",
+    "prezziStorico": []
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 2.45,
+    "prezzoUnitario": 9.9,
+    "importo": 24.26,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01756530232",
+      "ragioneSociale": "CAPRINI TOMMASO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "122",
+    "prezziStorico": [
+      {
+        "prezzo": 9.5,
+        "data": "2025-07-03",
+        "numeroFattura": "32"
+      },
+      {
+        "prezzo": 10.35,
+        "data": "2025-07-03",
+        "numeroFattura": "82"
+      }
+    ]
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 2.98,
+    "prezzoUnitario": 4.1,
+    "importo": 12.22,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01756530232",
+      "ragioneSociale": "CAPRINI TOMMASO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "32",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S09",
+    "descrizione": "PANCETTA DI SUINO",
+    "quantita": 1.252,
+    "prezzoUnitario": 8.5,
+    "importo": 10.64,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "240",
+    "prezziStorico": [
+      {
+        "prezzo": 8.5,
+        "data": "2025-07-03",
+        "numeroFattura": "33"
+      },
+      {
+        "prezzo": 8.3,
+        "data": "2025-07-03",
+        "numeroFattura": "164"
+      },
+      {
+        "prezzo": 8.5,
+        "data": "2025-07-03",
+        "numeroFattura": "202"
+      },
+      {
+        "prezzo": 8.3,
+        "data": "2025-07-03",
+        "numeroFattura": "240"
+      }
+    ]
+  },
+  {
+    "codice": "S17",
+    "descrizione": "COTECHINO",
+    "quantita": 2.756,
+    "prezzoUnitario": 10.5,
+    "importo": 28.94,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "33",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S29",
+    "descrizione": "FILETTO SUINO",
+    "quantita": 1.404,
+    "prezzoUnitario": 11.2,
+    "importo": 15.72,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "240",
+    "prezziStorico": [
+      {
+        "prezzo": 11.2,
+        "data": "2025-07-03",
+        "numeroFattura": "33"
+      },
+      {
+        "prezzo": 11.3,
+        "data": "2025-07-03",
+        "numeroFattura": "240"
+      }
+    ]
+  },
+  {
+    "codice": "B01",
+    "descrizione": "COPERTINA BOVINO",
+    "quantita": 2.308,
+    "prezzoUnitario": 15.9,
+    "importo": 36.7,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "33",
+    "prezziStorico": [
+      {
+        "prezzo": 15.9,
+        "data": "2025-07-03",
+        "numeroFattura": "33"
+      },
+      {
+        "prezzo": 13.5,
+        "data": "2025-07-03",
+        "numeroFattura": "33"
+      }
+    ]
+  },
+  {
+    "codice": "S21",
+    "descrizione": "TASTASAL",
+    "quantita": 4.21,
+    "prezzoUnitario": 9,
+    "importo": 37.89,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "33",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S18",
+    "descrizione": "SALSICCIA DI SUINO",
+    "quantita": 0.822,
+    "prezzoUnitario": 9.9,
+    "importo": 8.14,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "33",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B10",
+    "descrizione": "PUNTA DI CODONE",
+    "quantita": 1.498,
+    "prezzoUnitario": 25,
+    "importo": 37.45,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "202",
+    "prezziStorico": [
+      {
+        "prezzo": 24.5,
+        "data": "2025-07-03",
+        "numeroFattura": "33"
+      }
+    ]
+  },
+  {
+    "codice": "S02",
+    "descrizione": "COSTINE DI SUINO",
+    "quantita": 2.19,
+    "prezzoUnitario": 9.6,
+    "importo": 21.02,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "33",
+    "prezziStorico": [
+      {
+        "prezzo": 9.6,
+        "data": "2025-07-03",
+        "numeroFattura": "33"
+      },
+      {
+        "prezzo": 13.8,
+        "data": "2025-07-03",
+        "numeroFattura": "33"
+      }
+    ]
+  },
+  {
+    "codice": "B23",
+    "descrizione": "TRIPPA DI BOVINO",
+    "quantita": 4.038,
+    "prezzoUnitario": 9.5,
+    "importo": 38.36,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "33",
+    "prezziStorico": []
+  },
+  {
+    "codice": "3",
+    "descrizione": "BISTECCHE DI POLLO",
+    "quantita": 4.038,
+    "prezzoUnitario": 12.9,
+    "importo": 52.09,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "33",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B30",
+    "descrizione": "COSTATE BOVINO CON OSSO",
+    "quantita": 7.262,
+    "prezzoUnitario": 24.9,
+    "importo": 180.82,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "164",
+    "prezziStorico": [
+      {
+        "prezzo": 27,
+        "data": "2025-07-03",
+        "numeroFattura": "33"
+      }
+    ]
+  },
+  {
+    "codice": "03",
+    "descrizione": "BISTECCHE DI POLLO",
+    "quantita": 4.338,
+    "prezzoUnitario": 12.9,
+    "importo": 55.96,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "33",
+    "prezziStorico": []
+  },
+  {
+    "codice": "53",
+    "descrizione": "POLPA ANATRA CONGELATA",
+    "quantita": 6,
+    "prezzoUnitario": 18.23,
+    "importo": 109.38,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04059750234",
+      "ragioneSociale": "FRATELLI CAMPONOGARA S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "34",
+    "prezziStorico": []
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 16.895,
+    "prezzoUnitario": 9.5,
+    "importo": 160.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04059750234",
+      "ragioneSociale": "FRATELLI CAMPONOGARA S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "34",
+    "prezziStorico": []
+  },
+  {
+    "codice": "83",
+    "descrizione": "POLPA CONIGLIO CONG.",
+    "quantita": 5.5,
+    "prezzoUnitario": 16.5,
+    "importo": 90.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04059750234",
+      "ragioneSociale": "FRATELLI CAMPONOGARA S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "124",
+    "prezziStorico": [
+      {
+        "prezzo": 15.5,
+        "data": "2025-07-03",
+        "numeroFattura": "34"
+      }
+    ]
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 14.288,
+    "prezzoUnitario": 8.5,
+    "importo": 121.45,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04059750234",
+      "ragioneSociale": "FRATELLI CAMPONOGARA S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "241",
+    "prezziStorico": [
+      {
+        "prezzo": 8.1,
+        "data": "2025-07-03",
+        "numeroFattura": "34"
+      }
+    ]
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 14.92,
+    "prezzoUnitario": 3.4,
+    "importo": 50.73,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04059750234",
+      "ragioneSociale": "FRATELLI CAMPONOGARA S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "34",
+    "prezziStorico": []
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 8.15,
+    "prezzoUnitario": 7.3,
+    "importo": 59.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "204",
+    "prezziStorico": [
+      {
+        "prezzo": 8.5,
+        "data": "2025-07-03",
+        "numeroFattura": "35"
+      },
+      {
+        "prezzo": 7.9,
+        "data": "2025-07-03",
+        "numeroFattura": "86"
+      },
+      {
+        "prezzo": 8.5,
+        "data": "2025-07-03",
+        "numeroFattura": "86"
+      },
+      {
+        "prezzo": 7.9,
+        "data": "2025-07-03",
+        "numeroFattura": "125"
+      }
+    ]
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 8.87,
+    "prezzoUnitario": 4.5,
+    "importo": 39.92,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "35",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 6.2,
+    "prezzoUnitario": 7.2,
+    "importo": 44.64,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "35",
+    "prezziStorico": []
+  },
+  {
+    "codice": "71",
+    "descrizione": "BUSTONI DI POLLO",
+    "quantita": 12.584,
+    "prezzoUnitario": 3.5,
+    "importo": 44.04,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "166",
+    "prezziStorico": [
+      {
+        "prezzo": 3.3,
+        "data": "2025-07-03",
+        "numeroFattura": "35"
+      }
+    ]
+  },
+  {
+    "codice": "14",
+    "descrizione": "COSCETTE POLLO",
+    "quantita": 17.84,
+    "prezzoUnitario": 4.5,
+    "importo": 80.28,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "35",
+    "prezziStorico": []
+  },
+  {
+    "codice": "50",
+    "descrizione": "ALETTE POLLO",
+    "quantita": 5.731,
+    "prezzoUnitario": 2.75,
+    "importo": 15.76,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "166",
+    "prezziStorico": [
+      {
+        "prezzo": 2.95,
+        "data": "2025-07-03",
+        "numeroFattura": "35"
+      },
+      {
+        "prezzo": 2.7,
+        "data": "2025-07-03",
+        "numeroFattura": "125"
+      }
+    ]
+  },
+  {
+    "codice": "10",
+    "descrizione": "GALLINE BUSTO",
+    "quantita": 3.2,
+    "prezzoUnitario": 3.96,
+    "importo": 12.67,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "35",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B10",
+    "descrizione": "PUNTA DI CODONE DA 0,650",
+    "quantita": 12.65,
+    "prezzoUnitario": 22,
+    "importo": 278.3,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01827530237",
+      "ragioneSociale": "LA TAVERNETTA BOOM BOOM S N C DI CASSACCIO G  E PROVENZANO M",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "205",
+    "prezziStorico": [
+      {
+        "prezzo": 20,
+        "data": "2025-07-03",
+        "numeroFattura": "36"
+      },
+      {
+        "prezzo": 21.9,
+        "data": "2025-07-03",
+        "numeroFattura": "167"
+      }
+    ]
+  },
+  {
+    "codice": "B37",
+    "descrizione": "LINGUA SALMISTRATA",
+    "quantita": 1.8,
+    "prezzoUnitario": 11.35,
+    "importo": 20.43,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 42.85,
+    "prezzoUnitario": 10.9,
+    "importo": 467.07,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "206",
+    "prezziStorico": [
+      {
+        "prezzo": 9.5,
+        "data": "2025-07-03",
+        "numeroFattura": "37"
+      },
+      {
+        "prezzo": 10.35,
+        "data": "2025-07-03",
+        "numeroFattura": "37"
+      },
+      {
+        "prezzo": 9.95,
+        "data": "2025-07-03",
+        "numeroFattura": "127"
+      }
+    ]
+  },
+  {
+    "codice": "b33",
+    "descrizione": "MACINATO MISTO",
+    "quantita": 3,
+    "prezzoUnitario": 10.5,
+    "importo": 31.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "33",
+    "descrizione": "GALLETTO CONG.",
+    "quantita": 27.29,
+    "prezzoUnitario": 6.5,
+    "importo": 177.39,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 19.035,
+    "prezzoUnitario": 7.9,
+    "importo": 150.38,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "101",
+    "descrizione": "SOVRACOSCE POLLO",
+    "quantita": 7.2,
+    "prezzoUnitario": 4.9,
+    "importo": 35.28,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "V11",
+    "descrizione": "LOMBATA VITELLO",
+    "quantita": 13.05,
+    "prezzoUnitario": 20.5,
+    "importo": 267.53,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S21",
+    "descrizione": "TASTASAL",
+    "quantita": 2.05,
+    "prezzoUnitario": 9.5,
+    "importo": 19.48,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "V01",
+    "descrizione": "CODA VITELLO",
+    "quantita": 1.9,
+    "prezzoUnitario": 4.5,
+    "importo": 8.55,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B36",
+    "descrizione": "NERVETTI BOVINO",
+    "quantita": 3.7,
+    "prezzoUnitario": 5.5,
+    "importo": 20.35,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B27",
+    "descrizione": "CODA BOVINO",
+    "quantita": 4.05,
+    "prezzoUnitario": 11,
+    "importo": 44.55,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "14",
+    "descrizione": "COSCETTE POLLO",
+    "quantita": 8.57,
+    "prezzoUnitario": 4.5,
+    "importo": 38.57,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "37",
+    "prezziStorico": []
+  },
+  {
+    "codice": "19",
+    "descrizione": "ANATRA",
+    "quantita": 5.65,
+    "prezzoUnitario": 10.5,
+    "importo": 59.33,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01899660235",
+      "ragioneSociale": "LOCANDA VECCHIA CUSTOZA SNC DI SABINA BOSCAINI E C",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "38",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B30",
+    "descrizione": "COSTATE BOVINO",
+    "quantita": 4.2,
+    "prezzoUnitario": 22.5,
+    "importo": 94.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01899660235",
+      "ragioneSociale": "LOCANDA VECCHIA CUSTOZA SNC DI SABINA BOSCAINI E C",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "38",
+    "prezziStorico": [
+      {
+        "prezzo": 20.5,
+        "data": "2025-07-03",
+        "numeroFattura": "38"
+      }
+    ]
+  },
+  {
+    "codice": "B20",
+    "descrizione": "TRONCHETTO FIORENTINA",
+    "quantita": 3.8,
+    "prezzoUnitario": 23.4,
+    "importo": 88.92,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01899660235",
+      "ragioneSociale": "LOCANDA VECCHIA CUSTOZA SNC DI SABINA BOSCAINI E C",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "38",
+    "prezziStorico": [
+      {
+        "prezzo": 22.5,
+        "data": "2025-07-03",
+        "numeroFattura": "38"
+      }
+    ]
+  },
+  {
+    "codice": "B05",
+    "descrizione": "FILETTO BOVINO 3+",
+    "quantita": 2,
+    "prezzoUnitario": 31.9,
+    "importo": 63.8,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01899660235",
+      "ragioneSociale": "LOCANDA VECCHIA CUSTOZA SNC DI SABINA BOSCAINI E C",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "169",
+    "prezziStorico": [
+      {
+        "prezzo": 29.9,
+        "data": "2025-07-03",
+        "numeroFattura": "38"
+      }
+    ]
+  },
+  {
+    "codice": "B32",
+    "descrizione": "BATTUTE",
+    "quantita": 3,
+    "prezzoUnitario": 17.5,
+    "importo": 52.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01899660235",
+      "ragioneSociale": "LOCANDA VECCHIA CUSTOZA SNC DI SABINA BOSCAINI E C",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "38",
+    "prezziStorico": []
+  },
+  {
+    "codice": "71",
+    "descrizione": "BUSTONI DI POLLO",
+    "quantita": 24.18,
+    "prezzoUnitario": 3.5,
+    "importo": 84.63,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "00632890208",
+      "ragioneSociale": "MAC F LLI ZAMBONI SNC CARNI BOVINE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "39",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO C/PELLE",
+    "quantita": 8.45,
+    "prezzoUnitario": 7.9,
+    "importo": 66.76,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "00632890208",
+      "ragioneSociale": "MAC F LLI ZAMBONI SNC CARNI BOVINE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "39",
+    "prezziStorico": []
+  },
+  {
+    "codice": "10",
+    "descrizione": "GALLINE BUSTO",
+    "quantita": 3.2,
+    "prezzoUnitario": 3.96,
+    "importo": 12.67,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "40",
+    "prezziStorico": []
+  },
+  {
+    "codice": "71",
+    "descrizione": "BUSTONI DI POLLO",
+    "quantita": 22.81,
+    "prezzoUnitario": 3.68,
+    "importo": 83.94,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "40",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 11.608,
+    "prezzoUnitario": 7.9,
+    "importo": 91.7,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "40",
+    "prezziStorico": []
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 4.682,
+    "prezzoUnitario": 10.35,
+    "importo": 48.46,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "130",
+    "prezziStorico": [
+      {
+        "prezzo": 8.9,
+        "data": "2025-07-03",
+        "numeroFattura": "40"
+      }
+    ]
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 3.4,
+    "prezzoUnitario": 7.7,
+    "importo": 26.18,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "91",
+    "prezziStorico": [
+      {
+        "prezzo": 9.3,
+        "data": "2025-07-03",
+        "numeroFattura": "40"
+      }
+    ]
+  },
+  {
+    "codice": "7",
+    "descrizione": "FEGATI POLLO",
+    "quantita": 1.19,
+    "prezzoUnitario": 3.5,
+    "importo": 4.17,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "40",
+    "prezziStorico": []
+  },
+  {
+    "codice": "94",
+    "descrizione": "POLLO BUSTO 1300",
+    "quantita": 6.6,
+    "prezzoUnitario": 4.2,
+    "importo": 27.72,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "40",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 38.766,
+    "prezzoUnitario": 7.3,
+    "importo": 282.99,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01600710204",
+      "ragioneSociale": "MACELLERIA PUNTO PIU  SAS",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "41",
+    "prezziStorico": []
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 8.694,
+    "prezzoUnitario": 4.5,
+    "importo": 39.12,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01600710204",
+      "ragioneSociale": "MACELLERIA PUNTO PIU  SAS",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "41",
+    "prezziStorico": []
+  },
+  {
+    "codice": "71",
+    "descrizione": "BUSTONI DI POLLO",
+    "quantita": 61.08,
+    "prezzoUnitario": 3.3,
+    "importo": 201.56,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01600710204",
+      "ragioneSociale": "MACELLERIA PUNTO PIU  SAS",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "92",
+    "prezziStorico": [
+      {
+        "prezzo": 3.2,
+        "data": "2025-07-03",
+        "numeroFattura": "41"
+      }
+    ]
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 4.6,
+    "prezzoUnitario": 9.5,
+    "importo": 43.7,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04281010233",
+      "ragioneSociale": "NEW FOOD S A S  DI MARCO MAGARAGGIA   C",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "43",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO TAGLIATI",
+    "quantita": 18.5,
+    "prezzoUnitario": 10.5,
+    "importo": 194.25,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04281010233",
+      "ragioneSociale": "NEW FOOD S A S  DI MARCO MAGARAGGIA   C",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "43",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B15",
+    "descrizione": "NOCE DI BOVINO",
+    "quantita": 13.95,
+    "prezzoUnitario": 8.9,
+    "importo": 124.16,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03880300235",
+      "ragioneSociale": "NODO D AMORE PASTIFICIO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "44",
+    "prezziStorico": []
+  },
+  {
+    "codice": "V17",
+    "descrizione": "COLLO VITELLO DISOSS",
+    "quantita": 10,
+    "prezzoUnitario": 12.5,
+    "importo": 125,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03880300235",
+      "ragioneSociale": "NODO D AMORE PASTIFICIO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "44",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S10",
+    "descrizione": "LONZA DI SUINO",
+    "quantita": 16.9,
+    "prezzoUnitario": 5.9,
+    "importo": 99.71,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03880300235",
+      "ragioneSociale": "NODO D AMORE PASTIFICIO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-01-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "44",
+    "prezziStorico": []
+  },
+  {
+    "codice": "14",
+    "descrizione": "COSCETTE POLLO",
+    "quantita": 47.25,
+    "prezzoUnitario": 4.5,
+    "importo": 212.63,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04898430238",
+      "ragioneSociale": "P P S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "45",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B11",
+    "descrizione": "LOMBATA BOVINO",
+    "quantita": 24,
+    "prezzoUnitario": 21.5,
+    "importo": 516,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02324670237",
+      "ragioneSociale": "TRATTORIA LA RUSTEGA DI STEFANO MONTRESOR",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "46",
+    "prezziStorico": [
+      {
+        "prezzo": 19.7,
+        "data": "2025-07-03",
+        "numeroFattura": "46"
+      }
+    ]
+  },
+  {
+    "codice": "B20",
+    "descrizione": "TRONCHETTO FIORENTINA",
+    "quantita": 17.5,
+    "prezzoUnitario": 24.5,
+    "importo": 428.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02324670237",
+      "ragioneSociale": "TRATTORIA LA RUSTEGA DI STEFANO MONTRESOR",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "94",
+    "prezziStorico": [
+      {
+        "prezzo": 22,
+        "data": "2025-07-03",
+        "numeroFattura": "46"
+      },
+      {
+        "prezzo": 22.9,
+        "data": "2025-07-03",
+        "numeroFattura": "46"
+      }
+    ]
+  },
+  {
+    "codice": "B05",
+    "descrizione": "FILETTO BOVINO 3+",
+    "quantita": 1.5,
+    "prezzoUnitario": 32.5,
+    "importo": 48.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02324670237",
+      "ragioneSociale": "TRATTORIA LA RUSTEGA DI STEFANO MONTRESOR",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "133",
+    "prezziStorico": [
+      {
+        "prezzo": 30.5,
+        "data": "2025-07-03",
+        "numeroFattura": "46"
+      }
+    ]
+  },
+  {
+    "codice": "90",
+    "descrizione": "POLLO BUSTO 900",
+    "quantita": 10.65,
+    "prezzoUnitario": 4.2,
+    "importo": 44.73,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02324670237",
+      "ragioneSociale": "TRATTORIA LA RUSTEGA DI STEFANO MONTRESOR",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "46",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S15",
+    "descrizione": "LARDO DI SUINO",
+    "quantita": 9.3,
+    "prezzoUnitario": 7.5,
+    "importo": 69.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/01/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02324670237",
+      "ragioneSociale": "TRATTORIA LA RUSTEGA DI STEFANO MONTRESOR",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "46",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S02",
+    "descrizione": "COSTINE DI SUINO RIBBS",
+    "quantita": 103.71,
+    "prezzoUnitario": 5.9,
+    "importo": 611.89,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "03/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04765430238",
+      "ragioneSociale": "GASTRONOMIA  BAETO  DI POLATO PERNILLE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-24",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "47",
+    "prezziStorico": []
+  },
+  {
+    "codice": "53",
+    "descrizione": "POLPA ANATRA CONGELATA",
+    "quantita": 18,
+    "prezzoUnitario": 15.9,
+    "importo": 286.2,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "04/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02571540208",
+      "ragioneSociale": "IN SALITA SNC DI MAGNANI GINO E ZAHRA ANIF",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-04",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "50",
+    "prezziStorico": []
+  },
+  {
+    "codice": "3",
+    "descrizione": "SVIZZERE DI POLLO",
+    "quantita": 2.3,
+    "prezzoUnitario": 16.9,
+    "importo": 38.87,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "05/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01540360235",
+      "ragioneSociale": "SCUOLA DELL  INFANZIA S MARIA GORETTI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "51",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B25",
+    "descrizione": "GIRELLO BOVINO",
+    "quantita": 3.5,
+    "prezzoUnitario": 14.9,
+    "importo": 52.15,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "06/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04216960239",
+      "ragioneSociale": "RISTORANTE AI TRE VOLTI DI BUSCARDO LORELLA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "53",
+    "prezziStorico": []
+  },
+  {
+    "codice": "17",
+    "descrizione": "FARAONE",
+    "quantita": 10,
+    "prezzoUnitario": 25,
+    "importo": 250,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "10/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03976680235",
+      "ragioneSociale": "GASTRONOMIA DI VIA STELLA SNC DI PIGOZZO MATTIA E EMILIANO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-10",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "57",
+    "prezziStorico": []
+  },
+  {
+    "codice": "101",
+    "descrizione": "SOVRACOSCE POLLO",
+    "quantita": 1.9,
+    "prezzoUnitario": 4.5,
+    "importo": 8.55,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "13/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03325540239",
+      "ragioneSociale": "HOTEL GELMINI DI LUIGI GELMINI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "64",
+    "prezziStorico": []
+  },
+  {
+    "codice": "27",
+    "descrizione": "PASTISADA DE CAVAL",
+    "quantita": 6,
+    "prezzoUnitario": 20,
+    "importo": 120,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "20/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03113470235",
+      "ragioneSociale": "A M  FOOD S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-20",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "71",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B15",
+    "descrizione": "NOCE DI BOVINO",
+    "quantita": 1.7,
+    "prezzoUnitario": 12.5,
+    "importo": 21.25,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "22/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04216960239",
+      "ragioneSociale": "RISTORANTE AI TRE VOLTI DI BUSCARDO LORELLA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-26",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "232",
+    "prezziStorico": [
+      {
+        "prezzo": 11.9,
+        "data": "2025-07-03",
+        "numeroFattura": "72"
+      },
+      {
+        "prezzo": 10.13,
+        "data": "2025-07-03",
+        "numeroFattura": "111"
+      },
+      {
+        "prezzo": 11.9,
+        "data": "2025-07-03",
+        "numeroFattura": "138"
+      }
+    ]
+  },
+  {
+    "codice": "B08",
+    "descrizione": "GUANCIALE DI BOVINO",
+    "quantita": 2.1,
+    "prezzoUnitario": 19.5,
+    "importo": 40.95,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "78",
+    "prezziStorico": [
+      {
+        "prezzo": 13.4,
+        "data": "2025-07-03",
+        "numeroFattura": "78"
+      }
+    ]
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 10.8,
+    "prezzoUnitario": 8.7,
+    "importo": 93.96,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": [
+      {
+        "prezzo": 8.9,
+        "data": "2025-07-03",
+        "numeroFattura": "78"
+      }
+    ]
+  },
+  {
+    "codice": "B26",
+    "descrizione": "MUSCOLO CAMPANELLO BOVINO",
+    "quantita": 4.3,
+    "prezzoUnitario": 11.55,
+    "importo": 49.67,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": [
+      {
+        "prezzo": 13,
+        "data": "2025-07-03",
+        "numeroFattura": "78"
+      }
+    ]
+  },
+  {
+    "codice": "b33",
+    "descrizione": "MACINATO MISTO",
+    "quantita": 2.137,
+    "prezzoUnitario": 11.9,
+    "importo": 25.43,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": [
+      {
+        "prezzo": 9.9,
+        "data": "2025-07-03",
+        "numeroFattura": "78"
+      }
+    ]
+  },
+  {
+    "codice": "88",
+    "descrizione": "MACINATO CONIGLIO",
+    "quantita": 2.258,
+    "prezzoUnitario": 9.5,
+    "importo": 21.45,
+    "unitaMisura": "kg",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "235",
+    "prezziStorico": [
+      {
+        "prezzo": 11.5,
+        "data": "2025-07-03",
+        "numeroFattura": "78"
+      }
+    ]
+  },
+  {
+    "codice": "46",
+    "descrizione": "SELLA CONIGLIO",
+    "quantita": 7.3,
+    "prezzoUnitario": 17.5,
+    "importo": 127.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": [
+      {
+        "prezzo": 17.5,
+        "data": "2025-07-03",
+        "numeroFattura": "78"
+      },
+      {
+        "prezzo": 18.9,
+        "data": "2025-07-03",
+        "numeroFattura": "159"
+      }
+    ]
+  },
+  {
+    "codice": "B25",
+    "descrizione": "TARTARE",
+    "quantita": 4.5,
+    "prezzoUnitario": 12.9,
+    "importo": 58.05,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "78",
+    "prezziStorico": []
+  },
+  {
+    "codice": "94",
+    "descrizione": "POLLO BUSTO 1300",
+    "quantita": 6.888,
+    "prezzoUnitario": 4.35,
+    "importo": 29.96,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "235",
+    "prezziStorico": [
+      {
+        "prezzo": 4.5,
+        "data": "2025-07-03",
+        "numeroFattura": "78"
+      }
+    ]
+  },
+  {
+    "codice": "B01",
+    "descrizione": "COPERTINA BOVINO",
+    "quantita": 4.9,
+    "prezzoUnitario": 12.74,
+    "importo": 62.43,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": [
+      {
+        "prezzo": 12.4,
+        "data": "2025-07-03",
+        "numeroFattura": "78"
+      },
+      {
+        "prezzo": 14.9,
+        "data": "2025-07-03",
+        "numeroFattura": "118"
+      }
+    ]
+  },
+  {
+    "codice": "107",
+    "descrizione": "ROTOLI DI POLLO",
+    "quantita": 13.12,
+    "prezzoUnitario": 7.5,
+    "importo": 98.4,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04903470237",
+      "ragioneSociale": "BAULI RETAIL S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "80",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B40",
+    "descrizione": "MINI HAMBURGER DI BOVINO",
+    "quantita": 20.5,
+    "prezzoUnitario": 14.5,
+    "importo": 297.25,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "121",
+    "prezziStorico": [
+      {
+        "prezzo": 13.5,
+        "data": "2025-07-03",
+        "numeroFattura": "81"
+      }
+    ]
+  },
+  {
+    "codice": "B25",
+    "descrizione": "GIRELLO BOVINO",
+    "quantita": 2.54,
+    "prezzoUnitario": 19.85,
+    "importo": 50.42,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "240",
+    "prezziStorico": [
+      {
+        "prezzo": 19.84,
+        "data": "2025-07-03",
+        "numeroFattura": "83"
+      },
+      {
+        "prezzo": 19.8,
+        "data": "2025-07-03",
+        "numeroFattura": "164"
+      }
+    ]
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 6.044,
+    "prezzoUnitario": 12.5,
+    "importo": 75.55,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "164",
+    "prezziStorico": [
+      {
+        "prezzo": 7.5,
+        "data": "2025-07-03",
+        "numeroFattura": "83"
+      }
+    ]
+  },
+  {
+    "codice": "S13",
+    "descrizione": "COPPA SUINO",
+    "quantita": 3,
+    "prezzoUnitario": 6.9,
+    "importo": 20.7,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04556210237",
+      "ragioneSociale": "DOMUS S R L  BAR DELLA RAGIONE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "84",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S10",
+    "descrizione": "LONZA DI SUINO",
+    "quantita": 11.8,
+    "prezzoUnitario": 6.2,
+    "importo": 73.16,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04556210237",
+      "ragioneSociale": "DOMUS S R L  BAR DELLA RAGIONE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "84",
+    "prezziStorico": []
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 7.174,
+    "prezzoUnitario": 9.7,
+    "importo": 69.59,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "86",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S21",
+    "descrizione": "TASTASAL",
+    "quantita": 5,
+    "prezzoUnitario": 9.45,
+    "importo": 47.25,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01827530237",
+      "ragioneSociale": "LA TAVERNETTA BOOM BOOM S N C DI CASSACCIO G  E PROVENZANO M",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "87",
+    "prezziStorico": []
+  },
+  {
+    "codice": "58",
+    "descrizione": "ANATRA BUSTO",
+    "quantita": 5.456,
+    "prezzoUnitario": 10.5,
+    "importo": 57.29,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01899660235",
+      "ragioneSociale": "LOCANDA VECCHIA CUSTOZA SNC DI SABINA BOSCAINI E C",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "89",
+    "prezziStorico": []
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 47.4,
+    "prezzoUnitario": 4.5,
+    "importo": 213.3,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04898430238",
+      "ragioneSociale": "P P S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-02-28",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "93",
+    "prezziStorico": []
+  },
+  {
+    "codice": "03",
+    "descrizione": "PETTI DI POLLO",
+    "quantita": 10.594,
+    "prezzoUnitario": 7.5,
+    "importo": 79.46,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "28/02/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04898430238",
+      "ragioneSociale": "P P S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "210",
+    "prezziStorico": [
+      {
+        "prezzo": 7,
+        "data": "2025-07-03",
+        "numeroFattura": "93"
+      }
+    ]
+  },
+  {
+    "codice": "05",
+    "descrizione": "ALI DI POLLO",
+    "quantita": 3.4,
+    "prezzoUnitario": 2.95,
+    "importo": 10.03,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "06/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "99",
+    "prezziStorico": []
+  },
+  {
+    "codice": "91",
+    "descrizione": "POLLO BUSTO 1000",
+    "quantita": 11.194,
+    "prezzoUnitario": 3.95,
+    "importo": 44.22,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "13/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04216960239",
+      "ragioneSociale": "RISTORANTE AI TRE VOLTI DI BUSCARDO LORELLA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "158",
+    "prezziStorico": [
+      {
+        "prezzo": 3.9,
+        "data": "2025-07-03",
+        "numeroFattura": "104"
+      }
+    ]
+  },
+  {
+    "codice": "53",
+    "descrizione": "POLPA ANATRA CONGELATA",
+    "quantita": 5.192,
+    "prezzoUnitario": 14.55,
+    "importo": 75.54,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "13/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04546350234",
+      "ragioneSociale": "RAFFYLU  S R L S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-23",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "150",
+    "prezziStorico": [
+      {
+        "prezzo": 16.22,
+        "data": "2025-07-03",
+        "numeroFattura": "106"
+      },
+      {
+        "prezzo": 14.517,
+        "data": "2025-07-03",
+        "numeroFattura": "141"
+      }
+    ]
+  },
+  {
+    "codice": "50",
+    "descrizione": "ALETTE POLLO",
+    "quantita": 3,
+    "prezzoUnitario": 2.95,
+    "importo": 8.85,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "17/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-12",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "107",
+    "prezziStorico": []
+  },
+  {
+    "codice": "P01",
+    "descrizione": "PELLE POLLO",
+    "quantita": 10.47,
+    "prezzoUnitario": 0.3,
+    "importo": 3.14,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "17/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02571540208",
+      "ragioneSociale": "IN SALITA SNC DI MAGNANI GINO E ZAHRA ANIF",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-07",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "108",
+    "prezziStorico": []
+  },
+  {
+    "codice": "24",
+    "descrizione": "POLPA AGNELLO",
+    "quantita": 5.7,
+    "prezzoUnitario": 12,
+    "importo": 68.4,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "20/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02162560201",
+      "ragioneSociale": "ANTICHI SAPORI SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-20",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "110",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S13",
+    "descrizione": "COPPA SUINO S/OSSO",
+    "quantita": 7.468,
+    "prezzoUnitario": 7.5,
+    "importo": 56.01,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "235",
+    "prezziStorico": [
+      {
+        "prezzo": 7.9,
+        "data": "2025-07-03",
+        "numeroFattura": "118"
+      },
+      {
+        "prezzo": 7.09,
+        "data": "2025-07-03",
+        "numeroFattura": "159"
+      }
+    ]
+  },
+  {
+    "codice": "30",
+    "descrizione": "CAPPONI",
+    "quantita": 1.95,
+    "prezzoUnitario": 9.5,
+    "importo": 18.53,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": []
+  },
+  {
+    "codice": "93",
+    "descrizione": "POLLO BUSTO 1200",
+    "quantita": 11.91,
+    "prezzoUnitario": 4.35,
+    "importo": 51.81,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": [
+      {
+        "prezzo": 4.5,
+        "data": "2025-07-03",
+        "numeroFattura": "118"
+      }
+    ]
+  },
+  {
+    "codice": "B15",
+    "descrizione": "TARTARE DI MANZO",
+    "quantita": 2.2,
+    "prezzoUnitario": 12.9,
+    "importo": 28.38,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": []
+  },
+  {
+    "codice": "V30",
+    "descrizione": "PETTO DI VITELLO",
+    "quantita": 6.31,
+    "prezzoUnitario": 12.8,
+    "importo": 80.77,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S18",
+    "descrizione": "SALSICCIA DI SUINO",
+    "quantita": 4.3,
+    "prezzoUnitario": 11.9,
+    "importo": 51.17,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": [
+      {
+        "prezzo": 12.9,
+        "data": "2025-07-03",
+        "numeroFattura": "118"
+      }
+    ]
+  },
+  {
+    "codice": "7",
+    "descrizione": "FEGATI POLLO",
+    "quantita": 2.392,
+    "prezzoUnitario": 4.5,
+    "importo": 10.76,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": []
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 1.79,
+    "prezzoUnitario": 9.5,
+    "importo": 17.01,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": []
+  },
+  {
+    "codice": "3",
+    "descrizione": "MACINATO DI POLLO",
+    "quantita": 1.7,
+    "prezzoUnitario": 8.7,
+    "importo": 14.79,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "235",
+    "prezziStorico": [
+      {
+        "prezzo": 8.9,
+        "data": "2025-07-03",
+        "numeroFattura": "118"
+      }
+    ]
+  },
+  {
+    "codice": "83",
+    "descrizione": "POLPA CONIGLIO CONG.",
+    "quantita": 2.3,
+    "prezzoUnitario": 8.5,
+    "importo": 19.55,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "235",
+    "prezziStorico": [
+      {
+        "prezzo": 16.5,
+        "data": "2025-07-03",
+        "numeroFattura": "118"
+      }
+    ]
+  },
+  {
+    "codice": "B39",
+    "descrizione": "TARTARE",
+    "quantita": 2.5,
+    "prezzoUnitario": 13.5,
+    "importo": 33.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": [
+      {
+        "prezzo": 12.9,
+        "data": "2025-07-03",
+        "numeroFattura": "118"
+      }
+    ]
+  },
+  {
+    "codice": "51",
+    "descrizione": "COSCE CONIGLIO NOSTRANO",
+    "quantita": 2.2,
+    "prezzoUnitario": 12.5,
+    "importo": 27.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S29",
+    "descrizione": "FILETTO SUINO",
+    "quantita": 2.78,
+    "prezzoUnitario": 7.5,
+    "importo": 20.85,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B35",
+    "descrizione": "PANCIA BOVINO",
+    "quantita": 4.2,
+    "prezzoUnitario": 11.2,
+    "importo": 47.04,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "118",
+    "prezziStorico": []
+  },
+  {
+    "codice": "50",
+    "descrizione": "ALETTE POLLO",
+    "quantita": 12.87,
+    "prezzoUnitario": 3.1,
+    "importo": 39.9,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "119",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S18",
+    "descrizione": "LUGANEGA DI SUINO",
+    "quantita": 5,
+    "prezzoUnitario": 9.9,
+    "importo": 49.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "121",
+    "prezziStorico": []
+  },
+  {
+    "codice": "19",
+    "descrizione": "ANATRA",
+    "quantita": 1.7,
+    "prezzoUnitario": 9,
+    "importo": 15.3,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "121",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S15",
+    "descrizione": "LARDO DI SUINO TRITATO",
+    "quantita": 2.19,
+    "prezzoUnitario": 18.5,
+    "importo": 40.52,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "121",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B05",
+    "descrizione": "FILETTO BOVINO 3+",
+    "quantita": 4.45,
+    "prezzoUnitario": 39.5,
+    "importo": 175.78,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "238",
+    "prezziStorico": [
+      {
+        "prezzo": 33,
+        "data": "2025-07-03",
+        "numeroFattura": "121"
+      }
+    ]
+  },
+  {
+    "codice": "16",
+    "descrizione": "GALLETTO",
+    "quantita": 1.866,
+    "prezzoUnitario": 14.9,
+    "importo": 27.8,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "121",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B41",
+    "descrizione": "OSSA COLLO BOVINO",
+    "quantita": 5.3,
+    "prezzoUnitario": 1.7,
+    "importo": 9.01,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "121",
+    "prezziStorico": []
+  },
+  {
+    "codice": "49",
+    "descrizione": "POLPA CINCHIALE",
+    "quantita": 2.06,
+    "prezzoUnitario": 16.9,
+    "importo": 34.81,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "123",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S10",
+    "descrizione": "LONZA DI SUINO",
+    "quantita": 2.598,
+    "prezzoUnitario": 11.2,
+    "importo": 29.1,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "123",
+    "prezziStorico": []
+  },
+  {
+    "codice": "50",
+    "descrizione": "ALETTE POLLO",
+    "quantita": 12.37,
+    "prezzoUnitario": 3.1,
+    "importo": 38.35,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04059750234",
+      "ragioneSociale": "FRATELLI CAMPONOGARA S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "124",
+    "prezziStorico": []
+  },
+  {
+    "codice": "21",
+    "descrizione": "CONIGLIO LOT",
+    "quantita": 7.46,
+    "prezzoUnitario": 7.9,
+    "importo": 58.93,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04898430238",
+      "ragioneSociale": "P P S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "132",
+    "prezziStorico": []
+  },
+  {
+    "codice": "17",
+    "descrizione": "FARAONE",
+    "quantita": 11.09,
+    "prezzoUnitario": 7.9,
+    "importo": 87.61,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04898430238",
+      "ragioneSociale": "P P S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-03-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "132",
+    "prezziStorico": []
+  },
+  {
+    "codice": "P02",
+    "descrizione": "SVIZZERE DI POLLO",
+    "quantita": 3,
+    "prezzoUnitario": 16.9,
+    "importo": 50.7,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/03/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01540360235",
+      "ragioneSociale": "SCUOLA DELL  INFANZIA S MARIA GORETTI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-06",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "134",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S21",
+    "descrizione": "TASTASAL",
+    "quantita": 5,
+    "prezzoUnitario": 11.9,
+    "importo": 59.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": []
+  },
+  {
+    "codice": "92",
+    "descrizione": "POLLO BUSTO 1100",
+    "quantita": 11.385,
+    "prezzoUnitario": 4.35,
+    "importo": 49.52,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "159",
+    "prezziStorico": []
+  },
+  {
+    "codice": "3",
+    "descrizione": "PETTI POLLO",
+    "quantita": 11.264,
+    "prezzoUnitario": 8.1,
+    "importo": 91.24,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "160",
+    "prezziStorico": []
+  },
+  {
+    "codice": "17",
+    "descrizione": "FARAONE",
+    "quantita": 6.2,
+    "prezzoUnitario": 20,
+    "importo": 124,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "162",
+    "prezziStorico": []
+  },
+  {
+    "codice": "V30",
+    "descrizione": "MACINATO DI VITELLO",
+    "quantita": 3.35,
+    "prezzoUnitario": 15.9,
+    "importo": 53.27,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "162",
+    "prezziStorico": []
+  },
+  {
+    "codice": "3",
+    "descrizione": "PETTI POLLO",
+    "quantita": 6.539,
+    "prezzoUnitario": 7.4,
+    "importo": 48.39,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01756530232",
+      "ragioneSociale": "CAPRINI TOMMASO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "239",
+    "prezziStorico": [
+      {
+        "prezzo": 6.7,
+        "data": "2025-07-03",
+        "numeroFattura": "163"
+      }
+    ]
+  },
+  {
+    "codice": "3",
+    "descrizione": "PETTI POLLO",
+    "quantita": 11.032,
+    "prezzoUnitario": 8.5,
+    "importo": 93.77,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04059750234",
+      "ragioneSociale": "FRATELLI CAMPONOGARA S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "241",
+    "prezziStorico": [
+      {
+        "prezzo": 8.1,
+        "data": "2025-07-03",
+        "numeroFattura": "165"
+      }
+    ]
+  },
+  {
+    "codice": "B44",
+    "descrizione": "GUANCE BOVINO GELO",
+    "quantita": 10.3,
+    "prezzoUnitario": 16.9,
+    "importo": 174.07,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "168",
+    "prezziStorico": []
+  },
+  {
+    "codice": "14",
+    "descrizione": "COSCETTE POLLO",
+    "quantita": 19.54,
+    "prezzoUnitario": 3.9,
+    "importo": 76.21,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "00632890208",
+      "ragioneSociale": "MAC F LLI ZAMBONI SNC CARNI BOVINE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "170",
+    "prezziStorico": []
+  },
+  {
+    "codice": "42",
+    "descrizione": "CARRE' AGNELLO FRESCO",
+    "quantita": 2.38,
+    "prezzoUnitario": 15.9,
+    "importo": 37.84,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "246",
+    "prezziStorico": [
+      {
+        "prezzo": 14.85,
+        "data": "2025-07-03",
+        "numeroFattura": "171"
+      }
+    ]
+  },
+  {
+    "codice": "3",
+    "descrizione": "PETTI POLLO",
+    "quantita": 10.88,
+    "prezzoUnitario": 7.9,
+    "importo": 85.95,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "171",
+    "prezziStorico": []
+  },
+  {
+    "codice": "14",
+    "descrizione": "COSCETTE POLLO",
+    "quantita": 2.852,
+    "prezzoUnitario": 4.95,
+    "importo": 14.12,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "171",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B10",
+    "descrizione": "PUNTA DI CODONE",
+    "quantita": 3.1,
+    "prezzoUnitario": 19.5,
+    "importo": 60.45,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "171",
+    "prezziStorico": []
+  },
+  {
+    "codice": "b33",
+    "descrizione": "MACINATO MISTO BOVINO",
+    "quantita": 3.232,
+    "prezzoUnitario": 13.5,
+    "importo": 43.63,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03958640231",
+      "ragioneSociale": "VILLA ORMANETTO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "174",
+    "prezziStorico": []
+  },
+  {
+    "codice": "V36",
+    "descrizione": "OSSOBUCHI VITELLO",
+    "quantita": 2.026,
+    "prezzoUnitario": 16.9,
+    "importo": 34.24,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03958640231",
+      "ragioneSociale": "VILLA ORMANETTO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "174",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B42",
+    "descrizione": "CARNE SALA'",
+    "quantita": 3.588,
+    "prezzoUnitario": 23,
+    "importo": 82.52,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03958640231",
+      "ragioneSociale": "VILLA ORMANETTO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "174",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B43",
+    "descrizione": "SCOTTONCINO DI SCOTTONA",
+    "quantita": 4.308,
+    "prezzoUnitario": 29.5,
+    "importo": 127.09,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/04/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03958640231",
+      "ragioneSociale": "VILLA ORMANETTO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-04-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "174",
+    "prezziStorico": []
+  },
+  {
+    "codice": "04",
+    "descrizione": "COSCE POLLO",
+    "quantita": 39.91,
+    "prezzoUnitario": 3.6,
+    "importo": 143.68,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "05/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02757750209",
+      "ragioneSociale": "DAI MATT IN SALITA DI MAGNANI GINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-05",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "176",
+    "prezziStorico": []
+  },
+  {
+    "codice": "91",
+    "descrizione": "POLLO BUSTO 1000",
+    "quantita": 80.015,
+    "prezzoUnitario": 3.9,
+    "importo": 312.06,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "05/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02757750209",
+      "ragioneSociale": "DAI MATT IN SALITA DI MAGNANI GINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-03",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "176",
+    "prezziStorico": []
+  },
+  {
+    "codice": "P01",
+    "descrizione": "PELLE POLLO",
+    "quantita": 21.92,
+    "prezzoUnitario": 0.3,
+    "importo": 6.58,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "05/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02757750209",
+      "ragioneSociale": "DAI MATT IN SALITA DI MAGNANI GINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-03",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "176",
+    "prezziStorico": []
+  },
+  {
+    "codice": "Totali",
+    "descrizione": "FORNITURA PER EVENTO BOTTEGHE",
+    "quantita": 1,
+    "prezzoUnitario": 545.45,
+    "importo": 545.45,
+    "unitaMisura": "PZ",
+    "dataUltimaModifica": "14/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "01337600215",
+      "ragioneSociale": "ALTROMERCATO IMPRESA SOCIALE SOC  COOP",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-15",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "188",
+    "prezziStorico": [
+      {
+        "prezzo": 863.64,
+        "data": "2025-07-03",
+        "numeroFattura": "184"
+      }
+    ]
+  },
+  {
+    "codice": "B05",
+    "descrizione": "CONTROFILETTO BOVINO DISOSSATO",
+    "quantita": 5.1,
+    "prezzoUnitario": 22.5,
+    "importo": 114.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "197",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B04",
+    "descrizione": "MUSCOLO CAMPANELLO DI BOVINO",
+    "quantita": 2.98,
+    "prezzoUnitario": 11.55,
+    "importo": 34.42,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "197",
+    "prezziStorico": []
+  },
+  {
+    "codice": "P30",
+    "descrizione": "WURSTEL DI POLLO",
+    "quantita": 9,
+    "prezzoUnitario": 1.5,
+    "importo": 13.5,
+    "unitaMisura": "PZ",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02991650231",
+      "ragioneSociale": "BAULI GRILL SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "198",
+    "prezziStorico": []
+  },
+  {
+    "codice": "7",
+    "descrizione": "FEGATI POLLO",
+    "quantita": 2.01,
+    "prezzoUnitario": 2.5,
+    "importo": 5.03,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04903470237",
+      "ragioneSociale": "BAULI RETAIL S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "199",
+    "prezziStorico": []
+  },
+  {
+    "codice": "115",
+    "descrizione": "COTOLETTE POLLO",
+    "quantita": 7.5,
+    "prezzoUnitario": 14.77,
+    "importo": 110.78,
+    "unitaMisura": "PZ",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "238",
+    "prezziStorico": [
+      {
+        "prezzo": 14.5,
+        "data": "2025-07-03",
+        "numeroFattura": "200"
+      }
+    ]
+  },
+  {
+    "codice": "B37",
+    "descrizione": "LINGUA SALMISTRATA CRUDA",
+    "quantita": 1.344,
+    "prezzoUnitario": 16.5,
+    "importo": 22.18,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03075980239",
+      "ragioneSociale": "CENTRO SPORTIVO  LE FRATTE",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "202",
+    "prezziStorico": []
+  },
+  {
+    "codice": "93",
+    "descrizione": "POLLO BUSTO 1200",
+    "quantita": 6.19,
+    "prezzoUnitario": 4.2,
+    "importo": 26,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02408110233",
+      "ragioneSociale": "MACELLERIA DA LUIGI DI FASOLI MASSIMO   C  S A S",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "209",
+    "prezziStorico": []
+  },
+  {
+    "codice": "15",
+    "descrizione": "FESA TACCHINO",
+    "quantita": 5.6,
+    "prezzoUnitario": 10.9,
+    "importo": 61.04,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04898430238",
+      "ragioneSociale": "P P S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "210",
+    "prezziStorico": [
+      {
+        "prezzo": 9.9,
+        "data": "2025-07-03",
+        "numeroFattura": "210"
+      }
+    ]
+  },
+  {
+    "codice": "B20",
+    "descrizione": "TRONCHETTO FIORENTINA",
+    "quantita": 5.228,
+    "prezzoUnitario": 25.9,
+    "importo": 135.41,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03958640231",
+      "ragioneSociale": "VILLA ORMANETTO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "212",
+    "prezziStorico": []
+  },
+  {
+    "codice": "S21",
+    "descrizione": "TASTASAL",
+    "quantita": 2.086,
+    "prezzoUnitario": 10,
+    "importo": 20.86,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03958640231",
+      "ragioneSociale": "VILLA ORMANETTO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "212",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B44",
+    "descrizione": "GUANCE BOVINO",
+    "quantita": 4.13,
+    "prezzoUnitario": 17.5,
+    "importo": 72.28,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "31/05/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03958640231",
+      "ragioneSociale": "VILLA ORMANETTO SRL",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-05-31",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "212",
+    "prezziStorico": []
+  },
+  {
+    "codice": "102",
+    "descrizione": "COSCIOTTO POLLO",
+    "quantita": 32.41,
+    "prezzoUnitario": 3.6,
+    "importo": 116.68,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "03/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02757750209",
+      "ragioneSociale": "DAI MATT IN SALITA DI MAGNANI GINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-03",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "214",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B10",
+    "descrizione": "PUNTA DI CODONE",
+    "quantita": 2.4,
+    "prezzoUnitario": 22,
+    "importo": 52.8,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "17/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02755300205",
+      "ragioneSociale": "OMETTO SARA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "225",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B02",
+    "descrizione": "FESA FRANCESE DI BOVINO",
+    "quantita": 3.65,
+    "prezzoUnitario": 14.5,
+    "importo": 52.93,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "17/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02755300205",
+      "ragioneSociale": "OMETTO SARA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-17",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "225",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B05",
+    "descrizione": "FILETTO BOVINO 3+",
+    "quantita": 4.7,
+    "prezzoUnitario": 40.5,
+    "importo": 190.35,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "23/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03113470235",
+      "ragioneSociale": "A M  FOOD S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-23",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "227",
+    "prezziStorico": []
+  },
+  {
+    "codice": "3",
+    "descrizione": "PETTI POLLO",
+    "quantita": 65.188,
+    "prezzoUnitario": 7.4,
+    "importo": 482.39,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03761930233",
+      "ragioneSociale": "MASCANZONI CARNI S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "234",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B45",
+    "descrizione": "CONTROFILETTO BOVINO DISOSSATO",
+    "quantita": 6.9,
+    "prezzoUnitario": 22.5,
+    "importo": 155.25,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "235",
+    "prezziStorico": [
+      {
+        "prezzo": 23.5,
+        "data": "2025-07-03",
+        "numeroFattura": "235"
+      }
+    ]
+  },
+  {
+    "codice": "32",
+    "descrizione": "PETTO D'ANATRA",
+    "quantita": 0.85,
+    "prezzoUnitario": 21.9,
+    "importo": 18.62,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "235",
+    "prezziStorico": []
+  },
+  {
+    "codice": "91",
+    "descrizione": "POLLO BUSTO 1000",
+    "quantita": 13.07,
+    "prezzoUnitario": 4.35,
+    "importo": 56.85,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "03213760238",
+      "ragioneSociale": "AZIENDA AGRICOLA FACCIOLI ENZO SS AGRITURISMO DEI GRIPPI",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "235",
+    "prezziStorico": []
+  },
+  {
+    "codice": "35",
+    "descrizione": "PETTO DI FARAONA INTERO",
+    "quantita": 14.5,
+    "prezzoUnitario": 20.67,
+    "importo": 299.72,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "238",
+    "prezziStorico": []
+  },
+  {
+    "codice": "V39",
+    "descrizione": "FILETTO DI VITELLO",
+    "quantita": 4.5,
+    "prezzoUnitario": 37.5,
+    "importo": 168.75,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "238",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B20",
+    "descrizione": "TRONCHETTO FIORENTINA",
+    "quantita": 19,
+    "prezzoUnitario": 25.9,
+    "importo": 492.1,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "238",
+    "prezziStorico": []
+  },
+  {
+    "codice": "25",
+    "descrizione": "SPIEDINI DI POLLO",
+    "quantita": 16.1,
+    "prezzoUnitario": 14.5,
+    "importo": 233.45,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04830020238",
+      "ragioneSociale": "BURRO E SALVIA RICCARDINO S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "238",
+    "prezziStorico": []
+  },
+  {
+    "codice": "101",
+    "descrizione": "SOVRACOSCE POLLO",
+    "quantita": 5.1,
+    "prezzoUnitario": 4.15,
+    "importo": 21.17,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02011510233",
+      "ragioneSociale": "GELMETTI ALBINO",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "242",
+    "prezziStorico": []
+  },
+  {
+    "codice": "V13",
+    "descrizione": "FESA LUNGA DI VITELLO",
+    "quantita": 4.8,
+    "prezzoUnitario": 20.7,
+    "importo": 99.36,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "04593490230",
+      "ragioneSociale": "LOCANDA DEL VIANDANTE S R L",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "243",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B15",
+    "descrizione": "NOCE DI BOVINO",
+    "quantita": 5,
+    "prezzoUnitario": 10.9,
+    "importo": 54.5,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02755300205",
+      "ragioneSociale": "OMETTO SARA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "247",
+    "prezziStorico": []
+  },
+  {
+    "codice": "B13",
+    "descrizione": "FESA LUNGA DI BOVINO",
+    "quantita": 4.7,
+    "prezzoUnitario": 13.9,
+    "importo": 65.33,
+    "unitaMisura": "KG",
+    "dataUltimaModifica": "30/06/2025",
+    "aliquotaIVA": 10,
+    "cliente": {
+      "partitaIva": "02755300205",
+      "ragioneSociale": "OMETTO SARA",
+      "categoria": "privato"
+    },
+    "dataDocumento": "2025-06-30",
+    "dataUltimoAggiornamento": "2025-07-03",
+    "numeroFattura": "247",
+    "prezziStorico": []
+  }
+]

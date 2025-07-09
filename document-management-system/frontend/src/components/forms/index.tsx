@@ -1,4 +1,5 @@
 import ArticoloForm from './ArticoloForm';
 import ClienteForm from './ClienteForm';
+import { ArticoloFornitoreForm } from './ArticoloFornitoreForm';
 
-export { ArticoloForm, ClienteForm };
+export { ArticoloForm, ClienteForm, ArticoloFornitoreForm };

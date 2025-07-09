@@ -155,6 +155,7 @@ export const ClienteForm: React.FC<ClienteFormProps> = ({
 }) => {
   const [form] = Form.useForm();
   const [activeTab, setActiveTab] = useState('1');
+  const [selectedTipo, setSelectedTipo] = useState<string>(cliente?.tipo || 'CLIENTE');
   
   const [createCliente, { isLoading: isCreating }] = useCreateClienteMutation();
   const [updateCliente, { isLoading: isUpdating }] = useUpdateClienteMutation();
@@ -164,9 +165,25 @@ export const ClienteForm: React.FC<ClienteFormProps> = ({
 
   useEffect(() => {
     if (cliente) {
+      // Parse della categoria dalle note per i fornitori
+      let categoria = '';
+      let noteOriginal = cliente.note || '';
+      
+      if (cliente.tipo === 'FORNITORE' && cliente.note && cliente.note.startsWith('Categoria: ')) {
+        const categoriaParsed = cliente.note.match(/^Categoria: (.+?)(\n|$)/);
+        if (categoriaParsed) {
+          categoria = categoriaParsed[1];
+          noteOriginal = cliente.note.replace(/^Categoria: .+?(\n|$)/, '').trim();
+        }
+      }
+      
       form.setFieldsValue({
-        ...cliente
+        ...cliente,
+        categoria,
+        note: noteOriginal
       });
+      
+      setSelectedTipo(cliente.tipo);
     }
   }, [cliente, form]);
 
@@ -215,14 +232,29 @@ export const ClienteForm: React.FC<ClienteFormProps> = ({
 
   const onFinish = async (values: any) => {
     try {
+      // Gestione categoria per fornitori
+      let noteFinali = values.note || '';
+      
+      if ((values.tipo === 'FORNITORE' || values.tipo === 'CLIENTE_FORNITORE') && values.categoria) {
+        noteFinali = `Categoria: ${values.categoria}${noteFinali ? '\n' + noteFinali : ''}`;
+      }
+      
+      const clienteData = {
+        ...values,
+        note: noteFinali
+      };
+      
+      // Rimuovo il campo categoria temporaneo
+      delete clienteData.categoria;
+      
       if (isEditMode) {
         await updateCliente({
           id: cliente.id,
-          ...values
+          ...clienteData
         }).unwrap();
         message.success('Cliente aggiornato con successo');
       } else {
-        await createCliente(values).unwrap();
+        await createCliente(clienteData).unwrap();
         message.success('Cliente creato con successo');
         form.resetFields();
       }
@@ -286,7 +318,7 @@ export const ClienteForm: React.FC<ClienteFormProps> = ({
                 label="Tipologia"
                 rules={[{ required: true, message: 'Seleziona il tipo di cliente' }]}
               >
-                <Select>
+                <Select onChange={(value) => setSelectedTipo(value)}>
                   {tipiClienti.map((tipo) => (
                     <Option key={tipo} value={tipo}>
                       {tipo.replace(/_/g, ' ')}
@@ -385,6 +417,28 @@ export const ClienteForm: React.FC<ClienteFormProps> = ({
 
           {/* Scheda Note e Informazioni Aggiuntive */}
           <TabPane tab="Note e Info Aggiuntive" key="4">
+            {(selectedTipo === 'FORNITORE' || selectedTipo === 'CLIENTE_FORNITORE') && (
+              <Form.Item
+                name="categoria"
+                label="Categoria (solo Fornitori)"
+                tooltip="La categoria verrà salvata nelle note con formato 'Categoria: valore'"
+              >
+                <Select
+                  placeholder="Seleziona categoria fornitore"
+                  allowClear
+                >
+                  <Option value="servizi">Servizi</Option>
+                  <Option value="merci">Merci</Option>
+                  <Option value="consulenza">Consulenza</Option>
+                  <Option value="manifattura">Manifattura</Option>
+                  <Option value="alimentare">Alimentare</Option>
+                  <Option value="tecnologia">Tecnologia</Option>
+                  <Option value="trasporti">Trasporti</Option>
+                  <Option value="altro">Altro</Option>
+                </Select>
+              </Form.Item>
+            )}
+            
             <Form.Item
               name="note"
               label="Note"

@@ -36,4 +36,8 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
     boolean existsByPartitaIva(String partitaIva);
     
     boolean existsByCodiceFiscale(String codiceFiscale);
+
+    long countByAttivoTrue(); // Conta i clienti attivi
+    
+    long countByAttivoFalse(); // Conta i clienti inattivi
 }

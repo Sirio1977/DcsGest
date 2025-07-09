@@ -45,10 +45,31 @@ export interface Cliente {
   updatedAt?: string;
 }
 
+// Interface per ArticoloFornitore
+export interface ArticoloFornitore {
+  id: number;
+  codice: string;
+  descrizione: string;
+  quantita: number;
+  prezzoUnitario: number;
+  importo: number;
+  unitaMisura: string;
+  aliquotaIVA: number;
+  fornitorePartitaIva: string;
+  fornitoreRagioneSociale: string;
+  fornitoreCategoria?: string;
+  dataDocumento?: string;
+  dataUltimoAggiornamento?: string;
+  codiceInterno?: string;
+  prezziStorici?: string;
+  createdAt: string;
+  updatedAt?: string;
+}
+
 export const documentiApi = createApi({
   reducerPath: 'documentiApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:8080/api' }),
-  tagTypes: ['Documento', 'Articolo', 'Cliente'],
+  tagTypes: ['Documento', 'Articolo', 'Cliente', 'ArticoloFornitore'],
   endpoints: (builder) => ({
     // Endpoints Documenti
     getDocumenti: builder.query<Documento[], void>({
@@ -116,6 +137,39 @@ export const documentiApi = createApi({
       invalidatesTags: ['Articolo'],
     }),
 
+    // Endpoints Articoli Fornitori
+    getArticoliFornitori: builder.query<ArticoloFornitore[], void>({
+      query: () => '/articoli-fornitori',
+      providesTags: ['ArticoloFornitore'],
+    }),
+    getArticoloFornitoreById: builder.query<ArticoloFornitore, number>({
+      query: (id) => `/articoli-fornitori/${id}`,
+      providesTags: ['ArticoloFornitore'],
+    }),
+    createArticoloFornitore: builder.mutation<ArticoloFornitore, Partial<ArticoloFornitore>>({
+      query: (articoloFornitore) => ({
+        url: '/articoli-fornitori',
+        method: 'POST',
+        body: articoloFornitore,
+      }),
+      invalidatesTags: ['ArticoloFornitore'],
+    }),
+    updateArticoloFornitore: builder.mutation<ArticoloFornitore, Partial<ArticoloFornitore> & { id: number }>({
+      query: ({ id, ...rest }) => ({
+        url: `/articoli-fornitori/${id}`,
+        method: 'PUT',
+        body: rest,
+      }),
+      invalidatesTags: ['ArticoloFornitore'],
+    }),
+    deleteArticoloFornitore: builder.mutation<void, number>({
+      query: (id) => ({
+        url: `/articoli-fornitori/${id}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['ArticoloFornitore'],
+    }),
+
     // Endpoints Clienti
     getClienti: builder.query<Cliente[], void>({
       query: () => '/clienti',
@@ -163,6 +217,12 @@ export const {
   useCreateArticoloMutation,
   useUpdateArticoloMutation,
   useDeleteArticoloMutation,
+  
+  useGetArticoliFornitoriQuery,
+  useGetArticoloFornitoreByIdQuery,
+  useCreateArticoloFornitoreMutation,
+  useUpdateArticoloFornitoreMutation,
+  useDeleteArticoloFornitoreMutation,
   
   useGetClientiQuery,
   useGetClienteByIdQuery,

@@ -1,0 +1,36 @@
+[
+  {
+    "codice": "TEST001",
+    "descrizione": "Test Articolo Fornitore 1",
+    "quantita": 10.0,
+    "prezzoUnitario": 15.50,
+    "importo": 155.00,
+    "unitaMisura": "PZ",
+    "aliquotaIVA": 22,
+    "fornitore": {
+      "partitaIva": "12345678901",
+      "ragioneSociale": "FORNITORE TEST SRL",
+      "categoria": "merci"
+    },
+    "dataDocumento": "2025-07-09",
+    "dataUltimoAggiornamento": "2025-07-09",
+    "codiceInterno": "INT001"
+  },
+  {
+    "codice": "TEST002",
+    "descrizione": "Test Articolo Fornitore 2",
+    "quantita": 5.0,
+    "prezzoUnitario": 8.90,
+    "importo": 44.50,
+    "unitaMisura": "KG",
+    "aliquotaIVA": 10,
+    "fornitore": {
+      "partitaIva": "98765432109",
+      "ragioneSociale": "ALTRO FORNITORE SRL",
+      "categoria": "alimentari"
+    },
+    "dataDocumento": "2025-07-09",
+    "dataUltimoAggiornamento": "2025-07-09",
+    "codiceInterno": "INT002"
+  }
+]

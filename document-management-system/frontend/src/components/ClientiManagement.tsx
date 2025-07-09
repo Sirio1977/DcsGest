@@ -15,6 +15,7 @@ import {
   Popconfirm,
   Descriptions,
   Drawer,
+  Tooltip,
 } from 'antd';
 import {
   PlusOutlined,
@@ -168,6 +169,24 @@ export const ClientiManagement: React.FC = () => {
       ),
     },
     {
+      title: 'Categoria/Note',
+      dataIndex: 'note',
+      key: 'note',
+      width: 150,
+      ellipsis: true,
+      render: (note: string, record: Cliente) => {
+        if (record.tipo === 'FORNITORE' && note && note.startsWith('Categoria: ')) {
+          const categoria = note.replace('Categoria: ', '');
+          return <Tag color="orange">{categoria}</Tag>;
+        }
+        return note ? (
+          <Tooltip title={note}>
+            <span style={{ color: '#666' }}>{note.length > 20 ? note.substring(0, 20) + '...' : note}</span>
+          </Tooltip>
+        ) : '-';
+      }
+    },
+    {
       title: 'Tipo',
       dataIndex: 'tipo',
       key: 'tipo',
@@ -254,7 +273,7 @@ export const ClientiManagement: React.FC = () => {
     <div>
       <Row justify="space-between" align="middle" style={{ marginBottom: 20 }}>
         <Col>
-          <Title level={2}>Gestione Clienti</Title>
+          <Title level={2}>Gestione Clienti/Fornitori</Title>
         </Col>
         <Col>
           <Button
@@ -402,6 +421,13 @@ export const ClientiManagement: React.FC = () => {
                 {selectedCliente.tipo.replace('_', ' ')}
               </Tag>
             </Descriptions.Item>
+            
+            {selectedCliente.tipo === 'FORNITORE' && selectedCliente.note && selectedCliente.note.startsWith('Categoria: ') && (
+              <Descriptions.Item label="Categoria">
+                <Tag color="orange">{selectedCliente.note.replace('Categoria: ', '')}</Tag>
+              </Descriptions.Item>
+            )}
+            
             <Descriptions.Item label="Stato">
               <Tag color={selectedCliente.attivo ? 'green' : 'red'}>
                 {selectedCliente.attivo ? 'Attivo' : 'Inattivo'}

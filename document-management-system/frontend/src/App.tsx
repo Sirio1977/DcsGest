@@ -8,8 +8,10 @@ import SetupWizard from './components/SetupWizard';
 import AziendaManagement from './components/AziendaManagement';
 import ConfigurazioniManagement from './components/ConfigurazioniManagementSimple';
 import { ArticoliManagement } from './components/ArticoliManagement';
+import { ArticoliFornitoriManagement } from './components/ArticoliFornitoriManagement';
 import { ClientiManagement } from './components/ClientiManagement';
 import BackendDiagnostic from './components/BackendDiagnostic';
+import UtilityManagement from './components/UtilityManagement';
 import 'antd/dist/antd.css';
 import './App.css';
 
@@ -40,10 +42,13 @@ function App() {
               <Menu.Item key="2">📄 Documenti</Menu.Item>
               <Menu.SubMenu key="anagrafiche" title="📋 Anagrafiche">
                 <Menu.Item key="3">
-                  <Link to="/clienti">👥 Clienti</Link>
+                  <Link to="/clienti">👥 Clienti/Fornitori</Link>
                 </Menu.Item>
                 <Menu.Item key="4">
                   <Link to="/articoli">📦 Articoli</Link>
+                </Menu.Item>
+                <Menu.Item key="articoli-fornitori">
+                  <Link to="/articoli-fornitori">🏪 Articoli Fornitori</Link>
                 </Menu.Item>
               </Menu.SubMenu>
               <Menu.Item key="5">
@@ -54,9 +59,12 @@ function App() {
               </Menu.Item>
               <Menu.Item key="7">� Utenti</Menu.Item>
               <Menu.Item key="8">
-                <Link to="/setup">🔧 Setup Iniziale</Link>
+                <Link to="/utility">🛠️ Utility</Link>
               </Menu.Item>
               <Menu.Item key="9">
+                <Link to="/setup">🔧 Setup Iniziale</Link>
+              </Menu.Item>
+              <Menu.Item key="10">
                 <Link to="/diagnostica">🔍 Diagnostica Backend</Link>
               </Menu.Item>
             </Menu>
@@ -183,6 +191,8 @@ function App() {
                 <Route path="/configurazioni" element={<ConfigurazioniManagement />} />
                 <Route path="/clienti" element={<ClientiManagement />} />
                 <Route path="/articoli" element={<ArticoliManagement />} />
+                <Route path="/articoli-fornitori" element={<ArticoliFornitoriManagement />} />
+                <Route path="/utility" element={<UtilityManagement />} />
                 <Route path="/diagnostica" element={<BackendDiagnostic />} />
               </Routes>
             </Content>

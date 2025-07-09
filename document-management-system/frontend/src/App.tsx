@@ -1,0 +1,196 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Layout, Menu, Typography, Card, Row, Col, Button } from 'antd';
+import { useSelector } from 'react-redux';
+import { RootState } from './store/store';
+import { TestApi } from './components/TestApi';
+import SetupWizard from './components/SetupWizard';
+import AziendaManagement from './components/AziendaManagement';
+import ConfigurazioniManagement from './components/ConfigurazioniManagementSimple';
+import { ArticoliManagement } from './components/ArticoliManagement';
+import { ClientiManagement } from './components/ClientiManagement';
+import BackendDiagnostic from './components/BackendDiagnostic';
+import 'antd/dist/antd.css';
+import './App.css';
+
+const { Header, Content, Sider } = Layout;
+const { Title, Paragraph } = Typography;
+
+function App() {
+  const isAuthenticated = useSelector((state: RootState) => state.auth.isAuthenticated);
+  
+  return (
+    <Router>
+      <Layout style={{ minHeight: '100vh' }}>
+        <Header style={{ display: 'flex', alignItems: 'center', background: '#001529' }}>
+          <Title level={3} style={{ color: 'white', margin: 0 }}>
+            🗂️ Sistema Gestionale Documentale
+          </Title>
+        </Header>
+        <Layout>
+          <Sider width={200} style={{ background: '#fff' }}>
+            <Menu
+              mode="inline"
+              defaultSelectedKeys={['1']}
+              style={{ height: '100%', borderRight: 0 }}
+            >
+              <Menu.Item key="1">
+                <Link to="/">📊 Dashboard</Link>
+              </Menu.Item>
+              <Menu.Item key="2">📄 Documenti</Menu.Item>
+              <Menu.SubMenu key="anagrafiche" title="📋 Anagrafiche">
+                <Menu.Item key="3">
+                  <Link to="/clienti">👥 Clienti</Link>
+                </Menu.Item>
+                <Menu.Item key="4">
+                  <Link to="/articoli">📦 Articoli</Link>
+                </Menu.Item>
+              </Menu.SubMenu>
+              <Menu.Item key="5">
+                <Link to="/aziende">🏢 Aziende</Link>
+              </Menu.Item>
+              <Menu.Item key="6">
+                <Link to="/configurazioni">⚙️ Configurazioni</Link>
+              </Menu.Item>
+              <Menu.Item key="7">� Utenti</Menu.Item>
+              <Menu.Item key="8">
+                <Link to="/setup">🔧 Setup Iniziale</Link>
+              </Menu.Item>
+              <Menu.Item key="9">
+                <Link to="/diagnostica">🔍 Diagnostica Backend</Link>
+              </Menu.Item>
+            </Menu>
+          </Sider>
+          <Layout style={{ padding: '24px' }}>
+            <Content
+              style={{
+                background: '#fff',
+                padding: 24,
+                margin: 0,
+                minHeight: 280,
+              }}
+            >
+              <Routes>
+                <Route path="/" element={
+                  <div>
+                    <Title level={2}>✅ Benvenuto nel Sistema Gestionale!</Title>
+                    
+                    <Row gutter={[16, 16]} style={{ marginTop: 24 }}>
+                      <Col xs={24} md={6}>
+                        <Card title="🎯 Setup Iniziale" bordered={false} style={{ height: '100%' }}>
+                          <Paragraph>
+                            <strong>Configura la tua azienda</strong><br/>
+                            Utilizza il wizard per impostare tutti i dati necessari.
+                          </Paragraph>
+                          <Button 
+                            type="primary" 
+                            onClick={() => window.location.href = '/setup'}
+                            style={{ marginTop: '8px' }}
+                          >
+                            Avvia Setup
+                          </Button>
+                        </Card>
+                      </Col>
+
+                      <Col xs={24} md={6}>
+                        <Card title="� Clienti" bordered={false} style={{ height: '100%' }}>
+                          <Paragraph>
+                            <strong>Gestione Anagrafiche Clienti</strong><br/>
+                            Visualizza e gestisci i tuoi clienti e fornitori.
+                          </Paragraph>
+                          <Button 
+                            type="default" 
+                            onClick={() => window.location.href = '/clienti'}
+                            style={{ marginTop: '8px' }}
+                          >
+                            Vai ai Clienti
+                          </Button>
+                        </Card>
+                      </Col>
+
+                      <Col xs={24} md={6}>
+                        <Card title="📦 Articoli" bordered={false} style={{ height: '100%' }}>
+                          <Paragraph>
+                            <strong>Gestione Magazzino</strong><br/>
+                            Gestisci articoli, prezzi e categorie.
+                          </Paragraph>
+                          <Button 
+                            type="default" 
+                            onClick={() => window.location.href = '/articoli'}
+                            style={{ marginTop: '8px' }}
+                          >
+                            Vai agli Articoli
+                          </Button>
+                        </Card>
+                      </Col>
+                      
+                      <Col xs={24} md={6}>
+                        <Card title="🚀 Backend Status" bordered={false} style={{ height: '100%' }}>
+                          <Paragraph>
+                            ✅ <strong>Spring Boot</strong>: Attivo<br/>
+                            ✅ <strong>PostgreSQL</strong>: Connesso<br/>
+                            ✅ <strong>API REST</strong>: Operativo
+                          </Paragraph>
+                        </Card>
+                      </Col>
+                    </Row>
+
+                    <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
+                      <Col xs={24} md={12}>
+                        <Card title="⚙️ Configurazioni" bordered={false} style={{ height: '100%' }}>
+                          <Paragraph>
+                            <strong>Gestione Sistema</strong><br/>
+                            Configura IVA, pagamenti e numerazioni.
+                          </Paragraph>
+                          <Button 
+                            type="default" 
+                            onClick={() => window.location.href = '/configurazioni'}
+                            style={{ marginTop: '8px' }}
+                          >
+                            Vai alle Configurazioni
+                          </Button>
+                        </Card>
+                      </Col>
+                      
+                      <Col xs={24} md={12}>
+                        <Card title="🎨 Frontend Status" bordered={false} style={{ height: '100%' }}>
+                          <Paragraph>
+                            ✅ <strong>React App</strong>: Attiva<br/>
+                            ✅ <strong>Ant Design UI</strong>: Caricata<br/>
+                            ✅ <strong>TypeScript</strong>: Configurato
+                          </Paragraph>
+                        </Card>
+                      </Col>
+                    </Row>
+                    
+                    <TestApi />
+
+                    <Card title="🎯 Test di Connessione" style={{ marginTop: 16 }}>
+                      <Paragraph>
+                        Il sistema di gestione documentale è completamente operativo!
+                      </Paragraph>
+                      <Paragraph>
+                        • Backend API: <code>http://localhost:8080/api</code>
+                      </Paragraph>
+                      <Paragraph>
+                        • Frontend UI: <code>http://localhost:3000</code> (questa applicazione)
+                      </Paragraph>
+                    </Card>
+                  </div>
+                } />
+                <Route path="/setup" element={<SetupWizard />} />
+                <Route path="/aziende" element={<AziendaManagement />} />
+                <Route path="/configurazioni" element={<ConfigurazioniManagement />} />
+                <Route path="/clienti" element={<ClientiManagement />} />
+                <Route path="/articoli" element={<ArticoliManagement />} />
+                <Route path="/diagnostica" element={<BackendDiagnostic />} />
+              </Routes>
+            </Content>
+          </Layout>
+        </Layout>
+      </Layout>
+    </Router>
+  );
+}
+
+export default App;

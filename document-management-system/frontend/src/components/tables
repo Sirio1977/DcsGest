@@ -1,0 +1,15 @@
+import React from 'react';
+import { Table } from 'antd';
+
+interface TableProps {
+  data: any[];
+  columns: any[];
+}
+
+const DataTable: React.FC<TableProps> = ({ data, columns }) => {
+  return (
+    <Table dataSource={data} columns={columns} rowKey="id" />
+  );
+};
+
+export default DataTable;

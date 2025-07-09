@@ -1,0 +1,189 @@
+package com.gestionale.entity;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "clienti")
+public class Cliente {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    @Column(nullable = false)
+    private String ragioneSociale;
+    
+    @Column(unique = true)
+    private String partitaIva;
+    
+    private String codiceFiscale;
+    
+    private String indirizzo;
+    private String citta;
+    private String cap;
+    private String provincia;
+    private String telefono;
+    private String email;
+    private String pec;
+    
+    @Enumerated(EnumType.STRING)
+    private TipoCliente tipo = TipoCliente.CLIENTE;
+    
+    @Column(nullable = false)
+    private Boolean attivo = true;
+    
+    private String note;
+    
+    @Column(name = "created_at", nullable = false)
+    private LocalDateTime createdAt = LocalDateTime.now();
+    
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
+    
+    public enum TipoCliente {
+        CLIENTE, FORNITORE, CLIENTE_FORNITORE
+    }
+    
+    // Costruttori
+    public Cliente() {}
+    
+    public Cliente(String ragioneSociale, String partitaIva) {
+        this.ragioneSociale = ragioneSociale;
+        this.partitaIva = partitaIva;
+    }
+    
+    // Getters e Setters
+    public Long getId() {
+        return id;
+    }
+    
+    public void setId(Long id) {
+        this.id = id;
+    }
+    
+    public String getRagioneSociale() {
+        return ragioneSociale;
+    }
+    
+    public void setRagioneSociale(String ragioneSociale) {
+        this.ragioneSociale = ragioneSociale;
+    }
+    
+    public String getPartitaIva() {
+        return partitaIva;
+    }
+    
+    public void setPartitaIva(String partitaIva) {
+        this.partitaIva = partitaIva;
+    }
+    
+    public String getCodiceFiscale() {
+        return codiceFiscale;
+    }
+    
+    public void setCodiceFiscale(String codiceFiscale) {
+        this.codiceFiscale = codiceFiscale;
+    }
+    
+    public String getIndirizzo() {
+        return indirizzo;
+    }
+    
+    public void setIndirizzo(String indirizzo) {
+        this.indirizzo = indirizzo;
+    }
+    
+    public String getCitta() {
+        return citta;
+    }
+    
+    public void setCitta(String citta) {
+        this.citta = citta;
+    }
+    
+    public String getCap() {
+        return cap;
+    }
+    
+    public void setCap(String cap) {
+        this.cap = cap;
+    }
+    
+    public String getProvincia() {
+        return provincia;
+    }
+    
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+    
+    public String getTelefono() {
+        return telefono;
+    }
+    
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+    
+    public String getEmail() {
+        return email;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    public String getPec() {
+        return pec;
+    }
+    
+    public void setPec(String pec) {
+        this.pec = pec;
+    }
+    
+    public TipoCliente getTipo() {
+        return tipo;
+    }
+    
+    public void setTipo(TipoCliente tipo) {
+        this.tipo = tipo;
+    }
+    
+    public Boolean getAttivo() {
+        return attivo;
+    }
+    
+    public void setAttivo(Boolean attivo) {
+        this.attivo = attivo;
+    }
+    
+    public String getNote() {
+        return note;
+    }
+    
+    public void setNote(String note) {
+        this.note = note;
+    }
+    
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+    
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+    
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+    
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+    
+    @PreUpdate
+    public void preUpdate() {
+        this.updatedAt = LocalDateTime.now();
+    }
+}

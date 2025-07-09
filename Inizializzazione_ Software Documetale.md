@@ -60,27 +60,434 @@
   - POST /api/aziende ✅  
   - GET /api/configurazioni ✅
   - POST /api/configurazioni ✅
+  - **POST /api/import/clienti/preview** ✅
+  - **POST /api/import/clienti/save** ✅
+  - **POST /api/import/fornitori/preview** ✅
+  - **POST /api/import/fornitori/save** ✅
+  - **POST /api/import/articoli/preview** ✅
+  - **POST /api/import/articoli/save** ✅
+  - **POST /api/import/articoli-fornitori/preview** ✅
+  - **POST /api/import/articoli-fornitori/save** ✅
 - **Dashboard Frontend:**
   - Gestione Aziende ✅
   - Gestione Configurazioni ✅ (con resilienza errori)
   - Setup Wizard ✅
+  - **Utility di Sistema** ✅ (Import/Export/Backup)
+  - **Import Clienti JSON** ✅
+  - **Import Fornitori JSON** ✅
+  - **Import Articoli JSON** ✅
+  - **Import Articoli-Fornitori JSON** ✅
 - **Database:**
   - Tabelle azienda e configurazioni operative ✅
+  - **Repository con metodi di deduplicazione** ✅
+  - **Gestione transazioni per import massivi** ✅
   - Dati persistiti e recuperabili ✅
 
+### ✅ AGGIORNAMENTO COMPLETATO - IMPORT/EXPORT E UTILITY DI SISTEMA
+
+#### 🔧 FUNZIONALITÀ IMPORT/EXPORT IMPLEMENTATE:
+
+**Backend - Import Controller e Service:**
+- **ImportController**: Endpoint REST completi per tutte le operazioni di import/export
+  - `POST /api/import/clienti/preview` - Preview e validazione file clienti
+  - `POST /api/import/clienti/save` - Importazione definitiva clienti
+  - `POST /api/import/fornitori/preview` - Preview e validazione file fornitori  
+  - `POST /api/import/fornitori/save` - Importazione definitiva fornitori
+  - `POST /api/import/articoli/preview` - Preview e validazione file articoli
+  - `POST /api/import/articoli/save` - Importazione definitiva articoli
+  - `POST /api/import/articoli-fornitori/preview` - Preview relazioni articoli-fornitori
+  - `POST /api/import/articoli-fornitori/save` - Importazione relazioni articoli-fornitori
+
+- **ImportService**: Logica completa di importazione con:
+  - **Validazione JSON**: Parsing e controllo struttura file
+  - **Gestione Duplicati**: Identificazione e risoluzione conflitti
+  - **Statistiche Dettagliate**: Conteggi record totali, validi, errori, duplicati
+  - **Deduplicazione Intelligente**: Controllo per partita IVA, codice fiscale, codici articoli
+  - **Gestione Errori**: Reportistica dettagliata degli errori di validazione
+
+- **DTO Specializzati**: 
+  - `ClienteImportDto`, `FornitoreImportDto`, `ArticoloImportDto`
+  - `ImportResult`, `ImportResultDto` per statistiche e response
+  - Response specifici: `ImportClientiResponse`, `ImportFornitoriResponse`, `ImportArticoliResponse`
+
+**Frontend - Utility di Sistema:**
+- **Dashboard Utility**: Nuova sezione "Utility di Sistema" con tab organizzati:
+  - **Import Dati**: Upload e importazione file JSON per clienti, fornitori, articoli
+  - **Export Dati**: Esportazione dati in vari formati (in sviluppo)
+  - **Backup Database**: Utility per backup e ripristino database (in sviluppo)
+
+- **Componenti Import Specializzate**:
+  - `ImportClientiJson`: Interfaccia completa per import clienti
+  - `ImportFornitoriJson`: Interfaccia completa per import fornitori  
+  - `ImportArticoliJson`: Interfaccia completa per import articoli
+  - `ImportArticoliFornitoriJson`: Gestione relazioni articoli-fornitori
+
+- **Funzionalità UI Avanzate**:
+  - **Upload Drag & Drop**: Interfaccia intuitiva per caricamento file
+  - **Preview Anteprima**: Visualizzazione dati prima dell'importazione
+  - **Statistiche Real-time**: Contatori dinamici di record validi/errori
+  - **Validazione Client-side**: Controllo formato JSON e struttura file
+  - **Feedback Utente**: Alert informativi, progress indicators, messaggi di successo/errore
+  - **Esempi Struttura**: Template JSON di esempio per ogni tipo di import
+
+#### 📊 FORMATO FILE SUPPORTATI:
+
+**Clienti JSON:**
+```json
+[
+  {
+    "ragioneSociale": "Azienda Cliente Srl",
+    "partitaIva": "12345678901",
+    "codiceFiscale": "RSSMRA80A01H501Z",
+    "indirizzo": "Via Roma 123",
+    "citta": "Milano",
+    "provincia": "MI",
+    "cap": "20100",
+    "telefono": "02-12345678",
+    "email": "cliente@example.com"
+  }
+]
+```
+
+**Fornitori JSON:**
+```json
+[
+  {
+    "ragioneSociale": "Fornitore SpA",
+    "partitaIva": "98765432109",
+    "indirizzo": "Via Napoli 456",
+    "citta": "Roma",
+    "provincia": "RM",
+    "cap": "00100",
+    "email": "fornitore@example.com"
+  }
+]
+```
+
+#### 🔒 SICUREZZA E VALIDAZIONE:
+- **Validazione Backend**: Controlli server-side per tutti i campi obbligatori
+- **Gestione Errori**: Response dettagliate con errori specifici per ogni record
+- **Deduplicazione**: Prevenzione automatica inserimento duplicati
+- **Transazioni**: Rollback automatico in caso di errori durante l'importazione
+- **Logging**: Tracciamento completo delle operazioni di import per audit
+
+#### � STRUTTURA FILE AGGIORNATA:
+
+**Backend - Nuovi File Implementati:**
+```
+backend/src/main/java/com/gestionale/
+├── controller/
+│   └── ImportController.java           # Endpoint REST import/export
+├── service/
+│   └── ImportService.java             # Logica business import
+├── dto/
+│   ├── ClienteImportDto.java          # DTO per import clienti
+│   ├── FornitoreImportDto.java        # DTO per import fornitori
+│   ├── ArticoloImportDto.java         # DTO per import articoli
+│   ├── ImportResult.java              # Risultato operazioni import
+│   ├── ImportResultDto.java           # Response DTO per frontend
+│   ├── ImportClientiResponse.java     # Response specifica clienti
+│   ├── ImportFornitoriResponse.java   # Response specifica fornitori
+│   ├── ImportArticoliResponse.java    # Response specifica articoli
+│   └── ImportArticoliFornitoriResponse.java  # Response relazioni
+└── repository/
+    └── ClienteRepository.java         # Metodi deduplicazione estesi
+
+backend/data/                          # File di esempio per test
+├── clienti.json                       # Template clienti JSON
+├── fornitori.json                     # Template fornitori JSON
+├── articoli.json                      # Template articoli JSON
+└── articoliClienti.json              # Template relazioni
+```
+
+**Frontend - Nuove Componenti:**
+```
+frontend/src/components/
+├── UtilityManagement.tsx             # Dashboard principale utility
+└── utility/                          # Componenti specializzate import/export
+    ├── ImportClientiJson.tsx         # Import clienti con UI completa
+    ├── ImportFornitoriJson.tsx       # Import fornitori con validazione
+    ├── ImportArticoliJson.tsx        # Import articoli con preview
+    ├── ImportArticoliFornitoriJson.tsx  # Import relazioni
+    ├── DataExportUtility.tsx         # Export utility (placeholder)
+    └── DatabaseUtility.tsx           # Backup/restore (placeholder)
+```
+
+#### 🎯 USER EXPERIENCE MIGLIORATA:
+- **Navigation Intuitiva**: Nuova sezione "Utility" nel menu principale
+- **Workflow Guidato**: Processo step-by-step per ogni tipo di importazione
+- **Feedback Visivo**: Progress bar, statistiche real-time, messaggi di stato
+- **Error Prevention**: Validazione client-side e preview obbligatoria
+- **Esempi Integrati**: Template JSON mostrati direttamente nell'interfaccia
+- **Responsive Design**: Interfaccia ottimizzata per desktop e tablet
+
+#### 🧪 TESTING E QUALITY ASSURANCE:
+
+**Test di Integrazione Backend:**
+```java
+@SpringBootTest
+@Transactional
+class ImportControllerTest {
+  
+  @Test
+  void testClientiImportPreview() {
+    // Test validazione e preview clienti
+    MockMultipartFile file = new MockMultipartFile(
+      "file", "clienti.json", "application/json", 
+      clientiJsonContent.getBytes()
+    );
+    
+    ImportClientiResponse response = importController.previewClienti(file);
+    
+    assertThat(response.getTotalRecords()).isEqualTo(10);
+    assertThat(response.getValidRecords()).isEqualTo(8);
+    assertThat(response.getErrorRecords()).isEqualTo(2);
+  }
+  
+  @Test 
+  void testDeduplicationLogic() {
+    // Test gestione duplicati
+  }
+}
+```
+
+**Test Frontend con React Testing Library:**
+```typescript
+describe('ImportClientiJson', () => {
+  test('should show upload interface', () => {
+    render(<ImportClientiJson />);
+    expect(screen.getByText('Trascina il file JSON qui')).toBeInTheDocument();
+  });
+  
+  test('should validate JSON file format', async () => {
+    // Test validazione formato file
+  });
+  
+  test('should display preview statistics', async () => {
+    // Test visualizzazione statistiche
+  });
+});
+```
+
+**File di Test Utilizzati:**
+- `backend/src/test/resources/clienti.json` - Dataset test clienti
+- `backend/data/*.json` - File di esempio per documentazione
+- Test con vari scenari: dati validi, duplicati, errori di validazione
+
+#### 🚀 BEST PRACTICES OPERATIVE:
+1. **Backup Prima Import**: Sempre effettuare backup database prima di import massivi
+2. **Preview Obbligatoria**: Utilizzare sempre la funzione preview per validare i dati
+3. **File Strutturati**: Seguire esattamente la struttura JSON specificata negli esempi
+4. **Import Graduali**: Per grandi volumi, suddividere in batch più piccoli
+5. **Verifica Post-Import**: Controllare le statistiche e verificare i dati importati
+
+#### 📈 NAVIGATION AGGIORNATA:
+- **Nuova Sezione**: "Utility di Sistema" aggiunta al menu principale
+- **Anagrafiche**: Sezione riorganizzata con collegamenti diretti a clienti, fornitori, articoli
+- **Dashboard**: Link rapidi alle utility di import/export più utilizzate
+
 ### 📋 PROSSIMI STEP IMMEDIATI:
-1. **Riavviare Backend**: Per rendere attive le nuove entity Cliente/Articolo
-2. **Testare Configurazioni**: Verificare endpoint `/api/configurazioni`
-3. **Creare Service**: ClienteService e ArticoloService per logica business
-4. **Controller Anagrafiche**: ClienteController e ArticoloController
-5. **Frontend Anagrafiche**: Componenti per gestione clienti e articoli
+1. **Completare Export Utility**: Implementazione funzioni di esportazione dati
+2. **Database Utility**: Funzionalità backup/ripristino database automatizzato
+3. **Import Avanzato**: Supporto file Excel/CSV oltre al JSON
+4. **Validazione Estesa**: Controlli fiscali avanzati per partite IVA/codici fiscali
+5. **Audit Logging**: Tracciamento dettagliato tutte le operazioni di import/export
 
 ---
 
 ## CONTESTO E OBIETTIVI
 Creare un sistema completo di gestione documentale per aziende commerciali italiane, con backend Java Spring Boot, frontend React TypeScript e database PostgreSQL. Il sistema deve essere conforme alle normative fiscali italiane e supportare tutti i documenti commerciali primari.
 
-## ARCHITETTURA TECNICA COMPLETA
+## ENDPOINT API - IMPORT/EXPORT DOCUMENTAZIONE COMPLETA
+
+### Import Controller Endpoints
+
+#### Clienti Import
+```http
+POST /api/import/clienti/preview
+Content-Type: multipart/form-data
+
+# Parametri:
+- file: MultipartFile (JSON con array clienti)
+
+# Response: ImportClientiResponse
+{
+  "totalRecords": 10,
+  "validRecords": 8,
+  "errorRecords": 1,
+  "duplicateRecords": 1,
+  "errors": ["Errore riga 3: Partita IVA non valida"],
+  "duplicates": ["Cliente con P.IVA 12345678901 già presente"]
+}
+```
+
+```http
+POST /api/import/clienti/save
+Content-Type: multipart/form-data
+
+# Parametri:
+- file: MultipartFile (JSON con array clienti)
+
+# Response: ImportResultDto
+{
+  "success": true,
+  "message": "Importazione completata con successo",
+  "totalRecords": 10,
+  "processedRecords": 8,
+  "errors": []
+}
+```
+
+#### Fornitori Import
+```http
+POST /api/import/fornitori/preview
+POST /api/import/fornitori/save
+# Struttura analoga ai clienti
+```
+
+#### Articoli Import
+```http
+POST /api/import/articoli/preview
+POST /api/import/articoli/save
+# Supporta validazione codici articolo, prezzi, categorie
+```
+
+#### Articoli-Fornitori Relazioni
+```http
+POST /api/import/articoli-fornitori/preview
+POST /api/import/articoli-fornitori/save
+# Gestisce le relazioni many-to-many tra articoli e fornitori
+```
+
+### Frontend Components Architecture
+
+#### UtilityManagement.tsx
+```typescript
+// Tab-based interface per utility di sistema
+const tabs = [
+  {
+    key: "import",
+    label: "Import Dati",
+    children: <ImportUtilitiesTab />
+  },
+  {
+    key: "export", 
+    label: "Export Dati",
+    children: <DataExportUtility />
+  },
+  {
+    key: "database",
+    label: "Backup Database", 
+    children: <DatabaseUtility />
+  }
+];
+```
+
+#### Import Components Pattern
+```typescript
+// Pattern comune per tutti i componenti di import
+const ImportXxxJson = () => {
+  const [file, setFile] = useState<File | null>(null);
+  const [previewData, setPreviewData] = useState(null);
+  const [importing, setImporting] = useState(false);
+  
+  const handlePreview = async () => {
+    // Chiamata API preview con FormData
+  };
+  
+  const handleImport = async () => {
+    // Chiamata API save definitiva
+  };
+  
+  return (
+    <Card>
+      <Upload.Dragger>
+        {/* File upload interface */}
+      </Upload.Dragger>
+      {/* Preview section */}
+      {/* Statistics display */}
+      {/* Action buttons */}
+    </Card>
+  );
+};
+```
+
+### Validation Logic
+
+#### Backend Validation Rules
+```java
+// ClienteImportDto validation
+@NotBlank(message = "Ragione sociale obbligatoria")
+private String ragioneSociale;
+
+@Pattern(regexp = "^\\d{11}$", message = "Partita IVA deve essere di 11 cifre")
+private String partitaIva;
+
+@Email(message = "Email non valida")
+private String email;
+
+// Custom validation per deduplicazione
+public boolean isDuplicate(String partitaIva, String codiceFiscale) {
+  return clienteRepository.existsByPartitaIvaOrCodiceFiscale(partitaIva, codiceFiscale);
+}
+```
+
+#### Frontend Validation
+```typescript
+// Validazione client-side formato JSON
+const validateJsonFile = (file: File): Promise<boolean> => {
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const json = JSON.parse(e.target?.result as string);
+        // Validate structure
+        resolve(Array.isArray(json) && json.length > 0);
+      } catch {
+        resolve(false);
+      }
+    };
+    reader.readAsText(file);
+  });
+};
+```
+
+### Error Handling Strategy
+
+#### Backend Error Response
+```java
+@ExceptionHandler(ValidationException.class)
+public ResponseEntity<ImportResultDto> handleValidationException(ValidationException e) {
+  return ResponseEntity.badRequest().body(
+    ImportResultDto.builder()
+      .success(false)
+      .message("Errori di validazione")
+      .errors(e.getErrors())
+      .build()
+  );
+}
+```
+
+#### Frontend Error Display
+```typescript
+// Display errors with detailed information
+{errors.length > 0 && (
+  <Alert
+    message="Errori di Validazione"
+    description={
+      <ul>
+        {errors.map((error, index) => (
+          <li key={index}>{error}</li>
+        ))}
+      </ul>
+    }
+    type="error"
+    showIcon
+  />
+)}
+```
+
+---
 
 ### Backend (Java Spring Boot)
 - **Framework**: Spring Boot 3.2+, Java 17+

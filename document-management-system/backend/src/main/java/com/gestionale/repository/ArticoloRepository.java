@@ -37,7 +37,7 @@ public interface ArticoloRepository extends JpaRepository<Articolo, Long> {
            "LOWER(a.categoria) LIKE LOWER(CONCAT('%', :search, '%'))")
     List<Articolo> searchArticoli(@Param("search") String search);
     
-    @Query("SELECT a FROM Articolo a WHERE a.prezzo BETWEEN :prezzoMin AND :prezzoMax")
+    @Query("SELECT a FROM Articolo a WHERE a.prezzoVendita BETWEEN :prezzoMin AND :prezzoMax")
     List<Articolo> findByPrezzoRange(@Param("prezzoMin") BigDecimal prezzoMin, 
                                     @Param("prezzoMax") BigDecimal prezzoMax);
     

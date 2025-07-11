@@ -1,11 +1,18 @@
 package com.gestionale.entity;
 
 import javax.persistence.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "articoli")
+@Data
+@EqualsAndHashCode(exclude = {"id"})
+@ToString
 public class Articolo {
     
     @Id
@@ -21,7 +28,7 @@ public class Articolo {
     private String descrizioneEstesa;
     
     @Column(precision = 10, scale = 2)
-    private BigDecimal prezzo = BigDecimal.ZERO;
+    private BigDecimal prezzoVendita = BigDecimal.ZERO;
     
     @Column(precision = 10, scale = 2)
     private BigDecimal costo = BigDecimal.ZERO;
@@ -58,158 +65,72 @@ public class Articolo {
         PRODOTTO, SERVIZIO, MATERIA_PRIMA, SEMILAVORATO
     }
     
+    // ==================== GETTERS AND SETTERS ====================
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+
+    public String getCodice() { return codice; }
+    public void setCodice(String codice) { this.codice = codice; }
+
+    public String getDescrizione() { return descrizione; }
+    public void setDescrizione(String descrizione) { this.descrizione = descrizione; }
+
+    public String getDescrizioneEstesa() { return descrizioneEstesa; }
+    public void setDescrizioneEstesa(String descrizioneEstesa) { this.descrizioneEstesa = descrizioneEstesa; }
+
+    public BigDecimal getPrezzoVendita() { return prezzoVendita; }
+    public void setPrezzoVendita(BigDecimal prezzoVendita) { this.prezzoVendita = prezzoVendita; }
+
+    // Compatibility method for services using old name
+    public BigDecimal getPrezzo() { return prezzoVendita; }
+    public void setPrezzo(BigDecimal prezzo) { this.prezzoVendita = prezzo; }
+
+    public BigDecimal getCosto() { return costo; }
+    public void setCosto(BigDecimal costo) { this.costo = costo; }
+
+    public BigDecimal getAliquotaIva() { return aliquotaIva; }
+    public void setAliquotaIva(BigDecimal aliquotaIva) { this.aliquotaIva = aliquotaIva; }
+
+    public String getUnitaMisura() { return unitaMisura; }
+    public void setUnitaMisura(String unitaMisura) { this.unitaMisura = unitaMisura; }
+
+    public BigDecimal getGiacenza() { return giacenza; }
+    public void setGiacenza(BigDecimal giacenza) { this.giacenza = giacenza; }
+
+    public BigDecimal getGiacenzaMinima() { return giacenzaMinima; }
+    public void setGiacenzaMinima(BigDecimal giacenzaMinima) { this.giacenzaMinima = giacenzaMinima; }
+
+    public TipoArticolo getTipo() { return tipo; }
+    public void setTipo(TipoArticolo tipo) { this.tipo = tipo; }
+
+    public Boolean getAttivo() { return attivo; }
+    public void setAttivo(Boolean attivo) { this.attivo = attivo; }
+
+    public String getCategoria() { return categoria; }
+    public void setCategoria(String categoria) { this.categoria = categoria; }
+
+    public String getFornitore() { return fornitore; }
+    public void setFornitore(String fornitore) { this.fornitore = fornitore; }
+
+    public String getCodiceFornitore() { return codiceFornitore; }
+    public void setCodiceFornitore(String codiceFornitore) { this.codiceFornitore = codiceFornitore; }
+
+    public String getNote() { return note; }
+    public void setNote(String note) { this.note = note; }
+
+    public LocalDateTime getCreatedAt() { return createdAt; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+
+    public LocalDateTime getUpdatedAt() { return updatedAt; }
+    public void setUpdatedAt(LocalDateTime updatedAt) { this.updatedAt = updatedAt; }
+
     // Costruttori
     public Articolo() {}
     
-    public Articolo(String codice, String descrizione, BigDecimal prezzo) {
+    public Articolo(String codice, String descrizione, BigDecimal prezzoVendita) {
         this.codice = codice;
         this.descrizione = descrizione;
-        this.prezzo = prezzo;
-    }
-    
-    // Getters e Setters
-    public Long getId() {
-        return id;
-    }
-    
-    public void setId(Long id) {
-        this.id = id;
-    }
-    
-    public String getCodice() {
-        return codice;
-    }
-    
-    public void setCodice(String codice) {
-        this.codice = codice;
-    }
-    
-    public String getDescrizione() {
-        return descrizione;
-    }
-    
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
-    }
-    
-    public String getDescrizioneEstesa() {
-        return descrizioneEstesa;
-    }
-    
-    public void setDescrizioneEstesa(String descrizioneEstesa) {
-        this.descrizioneEstesa = descrizioneEstesa;
-    }
-    
-    public BigDecimal getPrezzo() {
-        return prezzo;
-    }
-    
-    public void setPrezzo(BigDecimal prezzo) {
-        this.prezzo = prezzo;
-    }
-    
-    public BigDecimal getCosto() {
-        return costo;
-    }
-    
-    public void setCosto(BigDecimal costo) {
-        this.costo = costo;
-    }
-    
-    public BigDecimal getAliquotaIva() {
-        return aliquotaIva;
-    }
-    
-    public void setAliquotaIva(BigDecimal aliquotaIva) {
-        this.aliquotaIva = aliquotaIva;
-    }
-    
-    public String getUnitaMisura() {
-        return unitaMisura;
-    }
-    
-    public void setUnitaMisura(String unitaMisura) {
-        this.unitaMisura = unitaMisura;
-    }
-    
-    public BigDecimal getGiacenza() {
-        return giacenza;
-    }
-    
-    public void setGiacenza(BigDecimal giacenza) {
-        this.giacenza = giacenza;
-    }
-    
-    public BigDecimal getGiacenzaMinima() {
-        return giacenzaMinima;
-    }
-    
-    public void setGiacenzaMinima(BigDecimal giacenzaMinima) {
-        this.giacenzaMinima = giacenzaMinima;
-    }
-    
-    public TipoArticolo getTipo() {
-        return tipo;
-    }
-    
-    public void setTipo(TipoArticolo tipo) {
-        this.tipo = tipo;
-    }
-    
-    public Boolean getAttivo() {
-        return attivo;
-    }
-    
-    public void setAttivo(Boolean attivo) {
-        this.attivo = attivo;
-    }
-    
-    public String getCategoria() {
-        return categoria;
-    }
-    
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-    
-    public String getFornitore() {
-        return fornitore;
-    }
-    
-    public void setFornitore(String fornitore) {
-        this.fornitore = fornitore;
-    }
-    
-    public String getCodiceFornitore() {
-        return codiceFornitore;
-    }
-    
-    public void setCodiceFornitore(String codiceFornitore) {
-        this.codiceFornitore = codiceFornitore;
-    }
-    
-    public String getNote() {
-        return note;
-    }
-    
-    public void setNote(String note) {
-        this.note = note;
-    }
-    
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-    
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-    
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-    
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
+        this.prezzoVendita = prezzoVendita;
     }
     
     @PreUpdate

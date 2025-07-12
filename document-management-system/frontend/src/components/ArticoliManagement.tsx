@@ -22,9 +22,9 @@ import {
   DeleteOutlined,
   EyeOutlined,
 } from '@ant-design/icons';
-import { useGetArticoliQuery, useDeleteArticoloMutation } from '../store/api/documentiApi';
+import { useGetArticoliQuery, useDeleteArticoloMutation } from '../store/api/articoliApi';
 import { ArticoloForm } from './forms';
-import type { Articolo } from '../store/api/documentiApi';
+import type { Articolo } from '../types/entities';
 
 const { Title } = Typography;
 const { Option } = Select;
@@ -38,8 +38,11 @@ export const ArticoliManagement: React.FC = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [isEditMode, setIsEditMode] = useState(false);
 
-  const { data: articoli, isLoading, error, refetch } = useGetArticoliQuery();
+  const { data: articoliResponse, isLoading, error, refetch } = useGetArticoliQuery({});
   const [deleteArticolo] = useDeleteArticoloMutation();
+
+  // Estrae gli articoli dalla risposta paginata
+  const articoli = articoliResponse?.content || [];
 
   const handleDelete = async (id: number) => {
     try {
@@ -52,20 +55,52 @@ export const ArticoliManagement: React.FC = () => {
   };
 
   const handleView = (articolo: Articolo) => {
+    console.log("🔥 DEBUG ArticoliManagement: handleView called with:", articolo);
+    console.log("🔥 DEBUG ArticoliManagement: isDetailModalVisible before:", isDetailModalVisible);
+    
+    // Debug DOM prima del cambiamento
+    setTimeout(() => {
+      const modals = document.querySelectorAll('.ant-modal-wrap');
+      console.log(`🔍 Modals nel DOM prima: ${modals.length}`);
+    }, 100);
+    
     setSelectedArticolo(articolo);
     setIsDetailModalVisible(true);
+    
+    // Debug DOM dopo il cambiamento
+    setTimeout(() => {
+      const modals = document.querySelectorAll('.ant-modal-wrap');
+      console.log(`🔍 Modals nel DOM dopo: ${modals.length}`);
+      modals.forEach((modal, index) => {
+        const style = window.getComputedStyle(modal);
+        console.log(`🔍 Modal ${index}:`, {
+          display: style.display,
+          visibility: style.visibility,
+          opacity: style.opacity,
+          zIndex: style.zIndex
+        });
+      });
+    }, 500);
+    
+    console.log("🔥 DEBUG ArticoliManagement: isDetailModalVisible after:", true);
   };
 
   const handleAddNew = () => {
+    console.log("🔥 DEBUG ArticoliManagement: handleAddNew called");
+    console.log("🔥 DEBUG ArticoliManagement: isFormVisible before:", isFormVisible);
     setSelectedArticolo(null);
     setIsEditMode(false);
     setIsFormVisible(true);
+    console.log("🔥 DEBUG ArticoliManagement: isFormVisible after:", true);
   };
 
   const handleEdit = (articolo: Articolo) => {
+    console.log("🔥 DEBUG ArticoliManagement: handleEdit called with:", articolo);
+    console.log("🔥 DEBUG ArticoliManagement: isFormVisible before:", isFormVisible);
     setSelectedArticolo(articolo);
     setIsEditMode(true);
     setIsFormVisible(true);
+    console.log("🔥 DEBUG ArticoliManagement: isFormVisible after (edit):", true);
   };
 
   const handleFormSuccess = () => {
@@ -86,7 +121,7 @@ export const ArticoliManagement: React.FC = () => {
         articolo.codice.toLowerCase().includes(searchTerm.toLowerCase()) ||
         articolo.descrizione.toLowerCase().includes(searchTerm.toLowerCase());
       
-      const matchesCategoria = !categoriaFilter || articolo.categoria === categoriaFilter;
+      const matchesCategoria = !categoriaFilter || articolo.tipo === categoriaFilter;
       const matchesStatus = !statusFilter || 
         (statusFilter === 'attivi' && articolo.attivo) ||
         (statusFilter === 'inattivi' && !articolo.attivo);
@@ -95,15 +130,15 @@ export const ArticoliManagement: React.FC = () => {
     });
   }, [articoli, searchTerm, categoriaFilter, statusFilter]);
 
-  // Estrai categorie uniche per il filtro
-  const categorie = React.useMemo(() => {
+  // Estrai tipi unici per il filtro
+  const tipi = React.useMemo(() => {
     if (!articoli) return [];
-    const categorieSet = new Set(
+    const tipiSet = new Set(
       articoli
-        .map((a: Articolo) => a.categoria)
-        .filter((cat): cat is string => Boolean(cat))
+        .map((a: Articolo) => a.tipo)
+        .filter((tipo) => Boolean(tipo))
     );
-    return Array.from(categorieSet);
+    return Array.from(tipiSet);
   }, [articoli]);
 
   const columns = [
@@ -122,20 +157,20 @@ export const ArticoliManagement: React.FC = () => {
       sorter: (a: Articolo, b: Articolo) => a.descrizione.localeCompare(b.descrizione),
     },
     {
-      title: 'Categoria',
-      dataIndex: 'categoria',
-      key: 'categoria',
+      title: 'Tipo',
+      dataIndex: 'tipo',
+      key: 'tipo',
       width: 150,
-      render: (categoria: string) => categoria || '-',
-      sorter: (a: Articolo, b: Articolo) => (a.categoria || '').localeCompare(b.categoria || ''),
+      render: (tipo: string) => tipo || '-',
+      sorter: (a: Articolo, b: Articolo) => (a.tipo || '').localeCompare(b.tipo || ''),
     },
     {
-      title: 'Prezzo',
-      dataIndex: 'prezzo',
-      key: 'prezzo',
+      title: 'Prezzo Vendita',
+      dataIndex: 'prezzoVendita',
+      key: 'prezzoVendita',
       width: 120,
-      render: (prezzo: number) => `€ ${prezzo.toFixed(2)}`,
-      sorter: (a: Articolo, b: Articolo) => a.prezzo - b.prezzo,
+      render: (prezzo: number) => prezzo != null ? `€ ${prezzo.toFixed(2)}` : '€ 0.00',
+      sorter: (a: Articolo, b: Articolo) => a.prezzoVendita - b.prezzoVendita,
       align: 'right' as const,
     },
     {
@@ -188,7 +223,7 @@ export const ArticoliManagement: React.FC = () => {
           />
           <Popconfirm
             title="Sei sicuro di voler eliminare questo articolo?"
-            onConfirm={() => handleDelete(record.id)}
+            onConfirm={() => record.id && handleDelete(record.id)}
             okText="Sì"
             cancelText="No"
           >
@@ -248,15 +283,15 @@ export const ArticoliManagement: React.FC = () => {
           </Col>
           <Col xs={24} sm={6} md={4}>
             <Select
-              placeholder="Categoria"
+              placeholder="Tipo"
               value={categoriaFilter}
               onChange={setCategoriaFilter}
               allowClear
               style={{ width: '100%' }}
             >
-              {categorie.map((categoria: string) => (
-                <Option key={categoria} value={categoria}>
-                  {categoria}
+              {tipi.map((tipo: string) => (
+                <Option key={tipo} value={tipo}>
+                  {tipo}
                 </Option>
               ))}
             </Select>
@@ -299,22 +334,33 @@ export const ArticoliManagement: React.FC = () => {
           }}
           scroll={{ x: 1200 }}
           size="small"
+          tableLayout="fixed"
+          sticky={false}
         />
       </Card>
 
       {/* Modal dettagli articolo */}
+      {console.log("🔥 DEBUG ArticoliManagement: Rendering Detail Modal, isDetailModalVisible:", isDetailModalVisible)}
+      {console.log("🔥 DEBUG ArticoliManagement: selectedArticolo:", selectedArticolo)}
       <Modal
         title="Dettagli Articolo"
         open={isDetailModalVisible}
-        onCancel={() => setIsDetailModalVisible(false)}
+        onCancel={() => {
+          console.log("🔥 DEBUG ArticoliManagement: Detail Modal cancelled");
+          setIsDetailModalVisible(false);
+        }}
         footer={[
-          <Button key="close" onClick={() => setIsDetailModalVisible(false)}>
+          <Button key="close" onClick={() => {
+            console.log("🔥 DEBUG ArticoliManagement: Detail Modal close button clicked");
+            setIsDetailModalVisible(false);
+          }}>
             Chiudi
           </Button>,
           <Button
             key="edit"
             type="primary"
             onClick={() => {
+              console.log("🔥 DEBUG ArticoliManagement: Detail Modal edit button clicked");
               setIsDetailModalVisible(false);
               handleEdit(selectedArticolo as Articolo);
             }}
@@ -323,6 +369,9 @@ export const ArticoliManagement: React.FC = () => {
           </Button>,
         ]}
         width={600}
+        forceRender={true}
+        getContainer={() => document.body}
+        zIndex={1000}
       >
         {selectedArticolo && (
           <div>
@@ -330,18 +379,21 @@ export const ArticoliManagement: React.FC = () => {
               <Col span={12}>
                 <p><strong>Codice:</strong> {selectedArticolo.codice}</p>
                 <p><strong>Descrizione:</strong> {selectedArticolo.descrizione}</p>
-                <p><strong>Categoria:</strong> {selectedArticolo.categoria || 'Non specificata'}</p>
+                <p><strong>Tipo:</strong> {selectedArticolo.tipo || 'Non specificato'}</p>
                 <p><strong>Unità di Misura:</strong> {selectedArticolo.unitaMisura}</p>
               </Col>
               <Col span={12}>
-                <p><strong>Prezzo:</strong> € {selectedArticolo.prezzo.toFixed(2)}</p>
+                <p><strong>Prezzo Vendita:</strong> € {selectedArticolo.prezzoVendita != null ? selectedArticolo.prezzoVendita.toFixed(2) : '0.00'}</p>
+                <p><strong>Costo:</strong> € {selectedArticolo.costo != null ? selectedArticolo.costo.toFixed(2) : '0.00'}</p>
                 <p><strong>Aliquota IVA:</strong> {selectedArticolo.aliquotaIva}%</p>
                 <p><strong>Stato:</strong> 
                   <Tag color={selectedArticolo.attivo ? 'green' : 'red'} style={{ marginLeft: 8 }}>
                     {selectedArticolo.attivo ? 'Attivo' : 'Inattivo'}
                   </Tag>
                 </p>
-                <p><strong>Creato il:</strong> {new Date(selectedArticolo.createdAt).toLocaleDateString('it-IT')}</p>
+                {selectedArticolo.createdAt && (
+                  <p><strong>Creato il:</strong> {new Date(selectedArticolo.createdAt).toLocaleDateString('it-IT')}</p>
+                )}
               </Col>
             </Row>
             {selectedArticolo.descrizioneEstesa && (
@@ -356,13 +408,21 @@ export const ArticoliManagement: React.FC = () => {
         )}
       </Modal>
 
+      {console.log("🔥 DEBUG ArticoliManagement: Rendering Drawer, isFormVisible:", isFormVisible)}
+      {console.log("🔥 DEBUG ArticoliManagement: isEditMode:", isEditMode)}
       <Drawer
         title={isEditMode ? "Modifica Articolo" : "Nuovo Articolo"}
         placement="right"
         width={720}
-        onClose={handleFormCancel}
+        onClose={() => {
+          console.log("🔥 DEBUG ArticoliManagement: Drawer onClose called");
+          handleFormCancel();
+        }}
         open={isFormVisible}
         destroyOnClose={true}
+        forceRender={true}
+        getContainer={() => document.body}
+        zIndex={1050}
       >
         <ArticoloForm
           articolo={selectedArticolo || undefined}

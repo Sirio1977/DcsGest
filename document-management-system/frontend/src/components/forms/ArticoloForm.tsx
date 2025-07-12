@@ -14,7 +14,8 @@ import {
   Typography
 } from 'antd';
 import { SaveOutlined, CloseOutlined } from '@ant-design/icons';
-import { useCreateArticoloMutation, useUpdateArticoloMutation, Articolo } from '../../store/api/documentiApi';
+import { useCreateArticoloMutation, useUpdateArticoloMutation } from '../../store/api/articoliApi';
+import type { Articolo } from '../../types/entities';
 
 const { TabPane } = Tabs;
 const { Title } = Typography;
@@ -69,7 +70,7 @@ export const ArticoloForm: React.FC<ArticoloFormProps> = ({
       form.setFieldsValue({
         ...articolo,
         // Assicuriamoci che i numeri siano trattati correttamente
-        prezzo: articolo.prezzo || 0,
+        prezzoVendita: articolo.prezzoVendita || 0,
         costo: articolo.costo || 0,
         aliquotaIva: articolo.aliquotaIva || 22,
         giacenza: articolo.giacenza || 0,

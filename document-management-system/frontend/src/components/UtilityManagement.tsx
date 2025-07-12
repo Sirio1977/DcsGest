@@ -9,7 +9,9 @@ import {
   Statistic,
   Space,
   Button,
-  Divider
+  Divider,
+  Modal,
+  Form
 } from 'antd';
 import {
   ToolOutlined,
@@ -37,6 +39,7 @@ const UtilityManagement: React.FC = () => {
     recordImportati: 0,
     erroriUltimaImportazione: 0
   });
+  const [modalVisible, setModalVisible] = useState(false);
 
   const utilityTabs = [
     {
@@ -50,7 +53,7 @@ const UtilityManagement: React.FC = () => {
       icon: <ImportOutlined />,
       title: 'Importazione Clienti da JSON',
       description: 'Importa clienti da file JSON con mapping automatico dei campi',
-      component: <ImportClientiJson onStatsUpdate={setStats} />
+      children: <ImportClientiJson onStatsUpdate={setStats} />
     },
     {
       key: 'import-fornitori',
@@ -63,7 +66,7 @@ const UtilityManagement: React.FC = () => {
       icon: <DatabaseOutlined />,
       title: 'Importazione Fornitori da JSON',
       description: 'Importa fornitori da file JSON con validazione automatica',
-      component: <ImportFornitoriJson onStatsUpdate={setStats} />
+      children: <ImportFornitoriJson onStatsUpdate={setStats} />
     },
     {
       key: 'import-articoli',
@@ -76,7 +79,7 @@ const UtilityManagement: React.FC = () => {
       icon: <FileTextOutlined />,
       title: 'Importazione Articoli da JSON',
       description: 'Importa articoli da file JSON/CSV con validazione prezzi',
-      component: <ImportArticoliJson onStatsUpdate={setStats} />
+      children: <ImportArticoliJson onStatsUpdate={setStats} />
     },
     {
       key: 'import-articoli-fornitori',
@@ -89,7 +92,7 @@ const UtilityManagement: React.FC = () => {
       icon: <CloudUploadOutlined />,
       title: 'Importazione Articoli Fornitori da JSON',
       description: 'Importa articoli fornitori da file JSON con validazione e mapping automatico',
-      component: <ImportArticoliFornitoriJson onImportComplete={(result: any) => {
+      children: <ImportArticoliFornitoriJson onImportComplete={(result: any) => {
         setStats(prev => ({
           ...prev,
           ultimaImportazione: new Date().toISOString().split('T')[0],
@@ -109,7 +112,7 @@ const UtilityManagement: React.FC = () => {
       icon: <ExportOutlined />,
       title: 'Esportazione Dati',
       description: 'Esporta dati del sistema in vari formati (JSON, CSV, Excel)',
-      component: <DataExportUtility />
+      children: <DataExportUtility />
     },
     {
       key: 'database',
@@ -122,11 +125,16 @@ const UtilityManagement: React.FC = () => {
       icon: <DatabaseOutlined />,
       title: 'Utility Database',
       description: 'Backup, restore e manutenzione database',
-      component: <DatabaseUtility />
+      children: <DatabaseUtility />
     }
   ];
 
   const currentUtility = utilityTabs.find(tab => tab.key === activeTab);
+
+  const handleModalSubmit = (values: any) => {
+    console.log('Modal form values:', values);
+    setModalVisible(false);
+  };
 
   return (
     <div style={{ padding: '24px' }}>
@@ -196,31 +204,8 @@ const UtilityManagement: React.FC = () => {
           size="large"
           tabPosition="left"
           style={{ minHeight: '600px' }}
-        >
-          {utilityTabs.map(tab => (
-            <TabPane 
-              tab={tab.label} 
-              key={tab.key}
-            >
-              <div style={{ padding: '0 24px' }}>
-                {/* Tab Header */}
-                <div style={{ marginBottom: '24px' }}>
-                  <Title level={3} style={{ marginBottom: '8px' }}>
-                    {tab.icon}
-                    <span style={{ marginLeft: '12px' }}>{tab.title}</span>
-                  </Title>
-                  <Paragraph type="secondary" style={{ fontSize: '14px' }}>
-                    {tab.description}
-                  </Paragraph>
-                  <Divider />
-                </div>
-
-                {/* Tab Content */}
-                {tab.component}
-              </div>
-            </TabPane>
-          ))}
-        </Tabs>
+          items={utilityTabs}
+        />
       </Card>
 
       {/* Footer Actions */}
@@ -248,6 +233,17 @@ const UtilityManagement: React.FC = () => {
           </Button>
         </Space>
       </div>
+
+      {/* Modal Example */}
+      <Modal
+        open={modalVisible}
+        onCancel={() => setModalVisible(false)}
+        footer={null}
+      >
+        <Form onFinish={handleModalSubmit}>
+          {/* Form content */}
+        </Form>
+      </Modal>
     </div>
   );
 };

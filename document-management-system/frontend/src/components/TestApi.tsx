@@ -3,7 +3,7 @@ import { Card, Button, Spin, Alert } from 'antd';
 import { useGetDocumentiQuery } from '../store/api/documentiApi';
 
 export const TestApi: React.FC = () => {
-  const { data: documenti, error, isLoading } = useGetDocumentiQuery();
+  const { data: documenti, error, isLoading } = useGetDocumentiQuery({});
 
   return (
     <Card title="Test API Documenti" style={{ margin: '16px' }}>
@@ -25,10 +25,10 @@ export const TestApi: React.FC = () => {
         />
       )}
       
-      {documenti && (
+      {documenti && documenti.content && (
         <Alert
           message="Successo!"
-          description={`Caricati ${documenti.length} documenti dal backend.`}
+          description={`Caricati ${documenti.content.length} documenti dal backend.`}
           type="success"
           showIcon
         />

@@ -1,232 +1,308 @@
-// This file contains API service definitions for making requests to the backend.
+// API service per gestione documenti - Integrazione con backend Spring Boot
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { Documento } from '../../types/documento';
+import { 
+  Documento, 
+  DocumentoCreateDto, 
+  DocumentoResponseDto,
+  DocumentiPagedResponse,
+  DocumentoFilter,
+  TipoDocumento,
+  StatoDocumento
+} from '../../types/documento';
 
-// Interface per Articolo
-export interface Articolo {
-  id: number;
-  codice: string;
-  descrizione: string;
-  descrizioneEstesa?: string;
-  categoria?: string;
-  prezzo: number;
-  costo: number;
-  unitaMisura: string;
-  aliquotaIva: number;
-  giacenza: number;
-  giacenzaMinima: number;
-  tipo: 'PRODOTTO' | 'SERVIZIO' | 'MATERIA_PRIMA' | 'SEMILAVORATO';
-  attivo: boolean;
-  fornitore?: string;
-  codiceFornitore?: string;
-  note?: string;
-  createdAt: string;
-  updatedAt?: string;
-}
-
-// Interface per Cliente
-export interface Cliente {
-  id: number;
-  ragioneSociale: string;
-  partitaIva?: string;
-  codiceFiscale?: string;
-  indirizzo?: string;
-  citta?: string;
-  cap?: string;
-  provincia?: string;
-  telefono?: string;
-  email?: string;
-  pec?: string;
-  tipo: 'CLIENTE' | 'FORNITORE' | 'CLIENTE_FORNITORE';
-  attivo: boolean;
-  note?: string;
-  createdAt: string;
-  updatedAt?: string;
-}
-
-// Interface per ArticoloFornitore
-export interface ArticoloFornitore {
-  id: number;
-  codice: string;
-  descrizione: string;
-  quantita: number;
-  prezzoUnitario: number;
-  importo: number;
-  unitaMisura: string;
-  aliquotaIVA: number;
-  fornitorePartitaIva: string;
-  fornitoreRagioneSociale: string;
-  fornitoreCategoria?: string;
-  dataDocumento?: string;
-  dataUltimoAggiornamento?: string;
-  codiceInterno?: string;
-  prezziStorici?: string;
-  createdAt: string;
-  updatedAt?: string;
-}
+// Base query con configurazione per backend Spring Boot
+const baseQuery = fetchBaseQuery({
+  baseUrl: 'http://localhost:8080/api/',
+  prepareHeaders: (headers) => {
+    headers.set('Content-Type', 'application/json');
+    // Aggiungiamo headers CORS se necessario
+    headers.set('Access-Control-Allow-Origin', '*');
+    return headers;
+  },
+});
 
 export const documentiApi = createApi({
   reducerPath: 'documentiApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:8080/api' }),
-  tagTypes: ['Documento', 'Articolo', 'Cliente', 'ArticoloFornitore'],
+  baseQuery,
+  tagTypes: ['Documento', 'Documenti'],
   endpoints: (builder) => ({
-    // Endpoints Documenti
-    getDocumenti: builder.query<Documento[], void>({
-      query: () => '/documenti',
-      providesTags: ['Documento'],
+    
+    // ========== CRUD DOCUMENTI ==========
+    
+    // Recupera documenti con filtri e paginazione
+    getDocumenti: builder.query<DocumentiPagedResponse, {
+      page?: number;
+      size?: number;
+      sortBy?: string;
+      sortDir?: 'asc' | 'desc';
+      filter?: DocumentoFilter;
+    }>({
+      query: (params = {}) => {
+        const { page = 0, size = 20, sortBy = 'dataDocumento', sortDir = 'desc', filter = {} } = params;
+        const searchParams = new URLSearchParams({
+          page: page.toString(),
+          size: size.toString(),
+          sortBy,
+          sortDir,
+          ...Object.fromEntries(
+            Object.entries(filter).map(([key, value]) => [key, String(value)])
+          )
+        });
+        return `documenti?${searchParams}`;
+      },
+      providesTags: ['Documenti'],
     }),
-    getDocumentoById: builder.query<Documento, number>({
-      query: (id) => `/documenti/${id}`,
-      providesTags: ['Documento'],
+
+    // Recupera documento per ID
+    getDocumento: builder.query<DocumentoResponseDto, number>({
+      query: (id) => `documenti/${id}`,
+      providesTags: (result, error, id) => [{ type: 'Documento', id }],
     }),
-    createDocumento: builder.mutation<Documento, Partial<Documento>>({
+
+    // Crea nuovo documento
+    createDocumento: builder.mutation<DocumentoResponseDto, DocumentoCreateDto>({
       query: (documento) => ({
-        url: '/documenti',
+        url: 'documenti',
         method: 'POST',
         body: documento,
       }),
-      invalidatesTags: ['Documento'],
+      invalidatesTags: ['Documenti'],
     }),
-    updateDocumento: builder.mutation<Documento, Partial<Documento> & { id: number }>({
-      query: ({ id, ...rest }) => ({
-        url: `/documenti/${id}`,
+
+    // Aggiorna documento esistente
+    updateDocumento: builder.mutation<DocumentoResponseDto, { id: number; documento: DocumentoCreateDto }>({
+      query: ({ id, documento }) => ({
+        url: `documenti/${id}`,
         method: 'PUT',
-        body: rest,
+        body: documento,
       }),
-      invalidatesTags: ['Documento'],
+      invalidatesTags: (result, error, { id }) => [
+        { type: 'Documento', id },
+        'Documenti'
+      ],
     }),
+
+    // Elimina documento
     deleteDocumento: builder.mutation<void, number>({
       query: (id) => ({
-        url: `/documenti/${id}`,
+        url: `documenti/${id}`,
         method: 'DELETE',
       }),
-      invalidatesTags: ['Documento'],
+      invalidatesTags: (result, error, id) => [
+        { type: 'Documento', id },
+        'Documenti'
+      ],
     }),
 
-    // Endpoints Articoli
-    getArticoli: builder.query<Articolo[], void>({
-      query: () => '/articoli',
-      providesTags: ['Articolo'],
-    }),
-    getArticoloById: builder.query<Articolo, number>({
-      query: (id) => `/articoli/${id}`,
-      providesTags: ['Articolo'],
-    }),
-    createArticolo: builder.mutation<Articolo, Partial<Articolo>>({
-      query: (articolo) => ({
-        url: '/articoli',
-        method: 'POST',
-        body: articolo,
+    // ========== GESTIONE STATI ==========
+
+    // Cambia stato documento
+    cambiaStatoDocumento: builder.mutation<DocumentoResponseDto, { id: number; nuovoStato: StatoDocumento }>({
+      query: ({ id, nuovoStato }) => ({
+        url: `documenti/${id}/stato?nuovoStato=${nuovoStato}`,
+        method: 'PATCH',
       }),
-      invalidatesTags: ['Articolo'],
-    }),
-    updateArticolo: builder.mutation<Articolo, Partial<Articolo> & { id: number }>({
-      query: ({ id, ...rest }) => ({
-        url: `/articoli/${id}`,
-        method: 'PUT',
-        body: rest,
-      }),
-      invalidatesTags: ['Articolo'],
-    }),
-    deleteArticolo: builder.mutation<void, number>({
-      query: (id) => ({
-        url: `/articoli/${id}`,
-        method: 'DELETE',
-      }),
-      invalidatesTags: ['Articolo'],
+      invalidatesTags: (result, error, { id }) => [
+        { type: 'Documento', id },
+        'Documenti'
+      ],
     }),
 
-    // Endpoints Articoli Fornitori
-    getArticoliFornitori: builder.query<ArticoloFornitore[], void>({
-      query: () => '/articoli-fornitori',
-      providesTags: ['ArticoloFornitore'],
-    }),
-    getArticoloFornitoreById: builder.query<ArticoloFornitore, number>({
-      query: (id) => `/articoli-fornitori/${id}`,
-      providesTags: ['ArticoloFornitore'],
-    }),
-    createArticoloFornitore: builder.mutation<ArticoloFornitore, Partial<ArticoloFornitore>>({
-      query: (articoloFornitore) => ({
-        url: '/articoli-fornitori',
+    // Duplica documento
+    duplicaDocumento: builder.mutation<DocumentoResponseDto, { id: number; nuovoTipo: TipoDocumento }>({
+      query: ({ id, nuovoTipo }) => ({
+        url: `documenti/${id}/duplica?nuovoTipo=${nuovoTipo}`,
         method: 'POST',
-        body: articoloFornitore,
       }),
-      invalidatesTags: ['ArticoloFornitore'],
-    }),
-    updateArticoloFornitore: builder.mutation<ArticoloFornitore, Partial<ArticoloFornitore> & { id: number }>({
-      query: ({ id, ...rest }) => ({
-        url: `/articoli-fornitori/${id}`,
-        method: 'PUT',
-        body: rest,
-      }),
-      invalidatesTags: ['ArticoloFornitore'],
-    }),
-    deleteArticoloFornitore: builder.mutation<void, number>({
-      query: (id) => ({
-        url: `/articoli-fornitori/${id}`,
-        method: 'DELETE',
-      }),
-      invalidatesTags: ['ArticoloFornitore'],
+      invalidatesTags: ['Documenti'],
     }),
 
-    // Endpoints Clienti
-    getClienti: builder.query<Cliente[], void>({
-      query: () => '/clienti',
-      providesTags: ['Cliente'],
-    }),
-    getClienteById: builder.query<Cliente, number>({
-      query: (id) => `/clienti/${id}`,
-      providesTags: ['Cliente'],
-    }),
-    createCliente: builder.mutation<Cliente, Partial<Cliente>>({
-      query: (cliente) => ({
-        url: '/clienti',
-        method: 'POST',
-        body: cliente,
-      }),
-      invalidatesTags: ['Cliente'],
-    }),
-    updateCliente: builder.mutation<Cliente, Partial<Cliente> & { id: number }>({
-      query: ({ id, ...rest }) => ({
-        url: `/clienti/${id}`,
-        method: 'PUT',
-        body: rest,
-      }),
-      invalidatesTags: ['Cliente'],
-    }),
-    deleteCliente: builder.mutation<void, number>({
+    // ========== UTILITIES ==========
+
+    // Genera PDF
+    generaPdfDocumento: builder.mutation<Blob, number>({
       query: (id) => ({
-        url: `/clienti/${id}`,
-        method: 'DELETE',
+        url: `documenti/${id}/pdf`,
+        method: 'GET',
+        responseHandler: (response) => response.blob(),
       }),
-      invalidatesTags: ['Cliente'],
     }),
+
+    // Invia documento via email
+    inviaDocumento: builder.mutation<DocumentoResponseDto, { id: number; emailDestinatario: string }>({
+      query: ({ id, emailDestinatario }) => ({
+        url: `documenti/${id}/invia?emailDestinatario=${emailDestinatario}`,
+        method: 'POST',
+      }),
+      invalidatesTags: (result, error, { id }) => [
+        { type: 'Documento', id },
+        'Documenti'
+      ],
+    }),
+
+    // ========== ENDPOINT SPECIFICI PER TIPO ==========
+
+    // Fatture
+    createFattura: builder.mutation<DocumentoResponseDto, DocumentoCreateDto>({
+      query: (fattura) => ({
+        url: 'documenti/fatture',
+        method: 'POST',
+        body: fattura,
+      }),
+      invalidatesTags: ['Documenti'],
+    }),
+
+    getFatture: builder.query<DocumentiPagedResponse, {
+      page?: number;
+      size?: number;
+      sortBy?: string;
+      sortDir?: 'asc' | 'desc';
+      statoDocumento?: StatoDocumento;
+      dataInizio?: string;
+      dataFine?: string;
+    }>({
+      query: ({ page = 0, size = 20, sortBy = 'dataDocumento', sortDir = 'desc', ...filters }) => {
+        const params = new URLSearchParams({
+          page: page.toString(),
+          size: size.toString(),
+          sortBy,
+          sortDir,
+          ...Object.fromEntries(
+            Object.entries(filters).map(([key, value]) => [key, String(value)])
+          )
+        });
+        return `documenti/fatture?${params}`;
+      },
+      providesTags: ['Documenti'],
+    }),
+
+    // Preventivi
+    createPreventivo: builder.mutation<DocumentoResponseDto, DocumentoCreateDto>({
+      query: (preventivo) => ({
+        url: 'documenti/preventivi',
+        method: 'POST',
+        body: preventivo,
+      }),
+      invalidatesTags: ['Documenti'],
+    }),
+
+    getPreventivi: builder.query<DocumentiPagedResponse, {
+      page?: number;
+      size?: number;
+      sortBy?: string;
+      sortDir?: 'asc' | 'desc';
+      statoDocumento?: StatoDocumento;
+      dataInizio?: string;
+      dataFine?: string;
+    }>({
+      query: ({ page = 0, size = 20, sortBy = 'dataDocumento', sortDir = 'desc', ...filters }) => {
+        const params = new URLSearchParams({
+          page: page.toString(),
+          size: size.toString(),
+          sortBy,
+          sortDir,
+          ...Object.fromEntries(
+            Object.entries(filters).map(([key, value]) => [key, String(value)])
+          )
+        });
+        return `documenti/preventivi?${params}`;
+      },
+      providesTags: ['Documenti'],
+    }),
+
+    // DDT
+    createDdt: builder.mutation<DocumentoResponseDto, DocumentoCreateDto>({
+      query: (ddt) => ({
+        url: 'documenti/ddt',
+        method: 'POST',
+        body: ddt,
+      }),
+      invalidatesTags: ['Documenti'],
+    }),
+
+    getDdt: builder.query<DocumentiPagedResponse, {
+      page?: number;
+      size?: number;
+      sortBy?: string;
+      sortDir?: 'asc' | 'desc';
+      statoDocumento?: StatoDocumento;
+      dataInizio?: string;
+      dataFine?: string;
+    }>({
+      query: ({ page = 0, size = 20, sortBy = 'dataDocumento', sortDir = 'desc', ...filters }) => {
+        const params = new URLSearchParams({
+          page: page.toString(),
+          size: size.toString(),
+          sortBy,
+          sortDir,
+          ...Object.fromEntries(
+            Object.entries(filters).map(([key, value]) => [key, String(value)])
+          )
+        });
+        return `documenti/ddt?${params}`;
+      },
+      providesTags: ['Documenti'],
+    }),
+
+    // Note di Credito
+    createNotaCredito: builder.mutation<DocumentoResponseDto, DocumentoCreateDto>({
+      query: (notaCredito) => ({
+        url: 'documenti/note-credito',
+        method: 'POST',
+        body: notaCredito,
+      }),
+      invalidatesTags: ['Documenti'],
+    }),
+
+    getNoteCredito: builder.query<DocumentiPagedResponse, {
+      page?: number;
+      size?: number;
+      sortBy?: string;
+      sortDir?: 'asc' | 'desc';
+      statoDocumento?: StatoDocumento;
+      dataInizio?: string;
+      dataFine?: string;
+    }>({
+      query: ({ page = 0, size = 20, sortBy = 'dataDocumento', sortDir = 'desc', ...filters }) => {
+        const params = new URLSearchParams({
+          page: page.toString(),
+          size: size.toString(),
+          sortBy,
+          sortDir,
+          ...Object.fromEntries(
+            Object.entries(filters).map(([key, value]) => [key, String(value)])
+          )
+        });
+        return `documenti/note-credito?${params}`;
+      },
+      providesTags: ['Documenti'],
+    }),
+
   }),
 });
 
 export const {
+  // Query hooks
   useGetDocumentiQuery,
-  useGetDocumentoByIdQuery,
+  useGetDocumentoQuery,
+  useGetFattureQuery,
+  useGetPreventiviQuery,
+  useGetDdtQuery,
+  useGetNoteCreditoQuery,
+  
+  // Mutation hooks
   useCreateDocumentoMutation,
   useUpdateDocumentoMutation,
   useDeleteDocumentoMutation,
+  useCambiaStatoDocumentoMutation,
+  useDuplicaDocumentoMutation,
+  useGeneraPdfDocumentoMutation,
+  useInviaDocumentoMutation,
   
-  useGetArticoliQuery,
-  useGetArticoloByIdQuery,
-  useCreateArticoloMutation,
-  useUpdateArticoloMutation,
-  useDeleteArticoloMutation,
-  
-  useGetArticoliFornitoriQuery,
-  useGetArticoloFornitoreByIdQuery,
-  useCreateArticoloFornitoreMutation,
-  useUpdateArticoloFornitoreMutation,
-  useDeleteArticoloFornitoreMutation,
-  
-  useGetClientiQuery,
-  useGetClienteByIdQuery,
-  useCreateClienteMutation,
-  useUpdateClienteMutation,
-  useDeleteClienteMutation,
+  // Tipo-specifici
+  useCreateFatturaMutation,
+  useCreatePreventivoMutation,
+  useCreateDdtMutation,
+  useCreateNotaCreditoMutation,
 } = documentiApi;

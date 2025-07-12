@@ -1,0 +1,141 @@
+/* =====================================================
+   DOCUMENT MANAGEMENT SYSTEM - STILI PRINCIPALI
+   Sistema modulare di stili per l'applicazione
+   ===================================================== */
+
+/* === IMPORT ORDINE SPECIFICO === */
+
+/* 1. Variabili CSS (devono essere caricate per prime) */
+@import './variables.css';
+
+/* 2. Reset e stili base */
+@import './base.css';
+
+/* 3. Layout components */
+@import './layout.css';
+
+/* 4. Utility classes */
+@import './utilities.css';
+
+/* 5. Ant Design overrides (dopo le utilities per avere precedenza) */
+@import './antd-overrides.css';
+
+/* 6. Componenti specifici (ultimo per massima specificità) */
+@import './components.css';
+
+/* =====================================================
+   STILI AGGIUNTIVI GLOBALI
+   ===================================================== */
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .app-sidebar,
+  .app-header {
+    display: none !important;
+  }
+  
+  .app-main {
+    padding: 0 !important;
+    background: white !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #0066cc;
+    --color-gray-300: #666666;
+    --color-gray-400: #555555;
+    --color-gray-500: #444444;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus styles for better accessibility */
+.ant-btn:focus-visible,
+.ant-input:focus-visible,
+.ant-select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar for webkit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+  border-radius: var(--border-radius-base);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-gray-300);
+  border-radius: var(--border-radius-base);
+  transition: background var(--transition-fast);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-400);
+}
+
+/* Animation classes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-base) ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight var(--transition-base) ease-out;
+}
+
+/* Debug utilities (rimuovere in produzione) */
+.debug-border {
+  border: 2px solid red !important;
+}
+
+.debug-bg {
+  background: rgba(255, 0, 0, 0.1) !important;
+}

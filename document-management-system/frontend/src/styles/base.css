@@ -1,0 +1,113 @@
+/* =====================================================
+   RESET E STILI BASE
+   ===================================================== */
+
+/* Reset box-sizing per tutti gli elementi */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin e padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Stili per html e body */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-gray-800);
+  background-color: var(--color-gray-50);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Reset per elementi di testo */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-gray-900);
+}
+
+p, span, div {
+  line-height: var(--line-height-normal);
+}
+
+/* Reset per link */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Reset per liste */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset per form elements */
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Focus outline per accessibilità */
+:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Nasconde outline per mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Stili per immagini */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Scrollbar personalizzata */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+  border-radius: var(--border-radius-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-300);
+  border-radius: var(--border-radius-base);
+  transition: background var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-400);
+}
+
+/* Root element del React app */
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

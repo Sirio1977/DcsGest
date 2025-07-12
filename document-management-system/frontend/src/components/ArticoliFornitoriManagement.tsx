@@ -27,8 +27,8 @@ import {
 import {
   useGetArticoliFornitoriQuery,
   useDeleteArticoloFornitoreMutation,
-  type ArticoloFornitore,
-} from '../store/api/documentiApi';
+} from '../store/api/articoliFornitoriApi';
+import type { ArticoloFornitore } from '../types/entities';
 import { ArticoloFornitoreForm } from './forms';
 import ImportArticoliFornitoriJson from './utility/ImportArticoliFornitoriJson';
 
@@ -45,8 +45,11 @@ export const ArticoliFornitoriManagement: React.FC = () => {
   const [isEditMode, setIsEditMode] = useState(false);
   const [isImportVisible, setIsImportVisible] = useState(false);
 
-  const { data: articoliFornitori, isLoading, error, refetch } = useGetArticoliFornitoriQuery();
+  const { data: articoliFornitoriResponse, isLoading, error, refetch } = useGetArticoliFornitoriQuery({});
   const [deleteArticoloFornitore] = useDeleteArticoloFornitoreMutation();
+
+  // Estrae gli articoli fornitori dalla risposta paginata
+  const articoliFornitori = articoliFornitoriResponse?.content || [];
 
   const handleDelete = async (id: number) => {
     try {
@@ -165,7 +168,7 @@ export const ArticoliFornitoriManagement: React.FC = () => {
       dataIndex: 'prezzoUnitario',
       key: 'prezzoUnitario',
       width: 100,
-      render: (prezzo: number) => `€ ${prezzo.toFixed(2)}`,
+      render: (prezzo: number) => prezzo != null ? `€ ${prezzo.toFixed(2)}` : '€ 0.00',
       sorter: (a: ArticoloFornitore, b: ArticoloFornitore) => a.prezzoUnitario - b.prezzoUnitario,
     },
     {
@@ -205,7 +208,7 @@ export const ArticoliFornitoriManagement: React.FC = () => {
           </Button>
           <Popconfirm
             title="Sei sicuro di voler eliminare questo articolo fornitore?"
-            onConfirm={() => handleDelete(record.id)}
+            onConfirm={() => record.id && handleDelete(record.id)}
             okText="Sì"
             cancelText="No"
           >
@@ -323,6 +326,8 @@ export const ArticoliFornitoriManagement: React.FC = () => {
         }}
         size="small"
         scroll={{ x: 1000 }}
+        tableLayout="fixed"
+        sticky={false}
       />
 
       {/* Form Modifica/Nuovo */}
@@ -368,7 +373,7 @@ export const ArticoliFornitoriManagement: React.FC = () => {
               {selectedArticoloFornitore.descrizione}
             </Descriptions.Item>
             <Descriptions.Item label="Prezzo Unitario" span={1}>
-              € {selectedArticoloFornitore.prezzoUnitario.toFixed(2)}
+              € {selectedArticoloFornitore.prezzoUnitario != null ? selectedArticoloFornitore.prezzoUnitario.toFixed(2) : '0.00'}
             </Descriptions.Item>
             <Descriptions.Item label="Unità di Misura" span={1}>
               {selectedArticoloFornitore.unitaMisura}
@@ -389,15 +394,15 @@ export const ArticoliFornitoriManagement: React.FC = () => {
                 <Tag color="blue">{selectedArticoloFornitore.fornitoreCategoria}</Tag>
               </Descriptions.Item>
             )}
-            <Descriptions.Item label="Creato il" span={1}>
+            <Descriptions.Item label="Data Documento" span={1}>
               <Text type="secondary">
-                {new Date(selectedArticoloFornitore.createdAt).toLocaleString('it-IT')}
+                {selectedArticoloFornitore.dataDocumento || 'N/A'}
               </Text>
             </Descriptions.Item>
-            {selectedArticoloFornitore.updatedAt && (
-              <Descriptions.Item label="Ultima modifica" span={1}>
+            {selectedArticoloFornitore.dataUltimoAggiornamento && (
+              <Descriptions.Item label="Ultimo Aggiornamento" span={1}>
                 <Text type="secondary">
-                  {new Date(selectedArticoloFornitore.updatedAt).toLocaleString('it-IT')}
+                  {selectedArticoloFornitore.dataUltimoAggiornamento}
                 </Text>
               </Descriptions.Item>
             )}

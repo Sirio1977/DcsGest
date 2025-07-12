@@ -23,7 +23,23 @@ public class ArticoloController {
     private ArticoloService articoloService;
     
     @GetMapping
-    public List<Articolo> getAllArticoli() {
+    public ResponseEntity<Page<Articolo>> getAllArticoli(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "20") int size,
+            @RequestParam(defaultValue = "descrizione") String sortBy,
+            @RequestParam(defaultValue = "asc") String sortDir) {
+        
+        Pageable pageable = PageRequest.of(page, size, 
+            sortDir.equals("desc") ? 
+                org.springframework.data.domain.Sort.by(sortBy).descending() : 
+                org.springframework.data.domain.Sort.by(sortBy).ascending()
+        );
+        Page<Articolo> articoli = articoloService.getArticoliPaginati(pageable);
+        return ResponseEntity.ok(articoli);
+    }
+    
+    @GetMapping("/all")
+    public List<Articolo> getAllArticoliNonPaginati() {
         return articoloService.getAllArticoli();
     }
     

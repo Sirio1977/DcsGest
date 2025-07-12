@@ -10,6 +10,7 @@ import ConfigurazioniManagement from './components/ConfigurazioniManagementSimpl
 import { ArticoliManagement } from './components/ArticoliManagement';
 import { ArticoliFornitoriManagement } from './components/ArticoliFornitoriManagement';
 import { ClientiManagement } from './components/ClientiManagement';
+import DocumentiManagement from './components/DocumentiManagement';
 import BackendDiagnostic from './components/BackendDiagnostic';
 import UtilityManagement from './components/UtilityManagement';
 import 'antd/dist/antd.css';
@@ -23,23 +24,25 @@ function App() {
   
   return (
     <Router>
-      <Layout style={{ minHeight: '100vh' }}>
-        <Header style={{ display: 'flex', alignItems: 'center', background: '#001529' }}>
-          <Title level={3} style={{ color: 'white', margin: 0 }}>
+      <Layout className="app-layout">
+        <Header className="app-header">
+          <Title level={3} className="app-header__title">
             🗂️ Sistema Gestionale Documentale
           </Title>
         </Header>
-        <Layout>
-          <Sider width={200} style={{ background: '#fff' }}>
+        <Layout className="app-content">
+          <Sider width={200} className="app-sidebar">
             <Menu
               mode="inline"
               defaultSelectedKeys={['1']}
-              style={{ height: '100%', borderRight: 0 }}
+              className="nav-menu"
             >
               <Menu.Item key="1">
                 <Link to="/">📊 Dashboard</Link>
               </Menu.Item>
-              <Menu.Item key="2">📄 Documenti</Menu.Item>
+              <Menu.Item key="2">
+                <Link to="/documenti">📄 Documenti</Link>
+              </Menu.Item>
               <Menu.SubMenu key="anagrafiche" title="📋 Anagrafiche">
                 <Menu.Item key="3">
                   <Link to="/clienti">👥 Clienti/Fornitori</Link>
@@ -69,23 +72,16 @@ function App() {
               </Menu.Item>
             </Menu>
           </Sider>
-          <Layout style={{ padding: '24px' }}>
-            <Content
-              style={{
-                background: '#fff',
-                padding: 24,
-                margin: 0,
-                minHeight: 280,
-              }}
-            >
+          <Layout className="app-main">
+            <Content className="bg-white p-lg">
               <Routes>
                 <Route path="/" element={
                   <div>
                     <Title level={2}>✅ Benvenuto nel Sistema Gestionale!</Title>
                     
-                    <Row gutter={[16, 16]} style={{ marginTop: 24 }}>
+                    <Row gutter={[16, 16]} className="mt-lg">
                       <Col xs={24} md={6}>
-                        <Card title="🎯 Setup Iniziale" bordered={false} style={{ height: '100%' }}>
+                        <Card title="🎯 Setup Iniziale" bordered={false} className="h-full">
                           <Paragraph>
                             <strong>Configura la tua azienda</strong><br/>
                             Utilizza il wizard per impostare tutti i dati necessari.
@@ -93,7 +89,7 @@ function App() {
                           <Button 
                             type="primary" 
                             onClick={() => window.location.href = '/setup'}
-                            style={{ marginTop: '8px' }}
+                            className="mt-sm"
                           >
                             Avvia Setup
                           </Button>
@@ -101,7 +97,7 @@ function App() {
                       </Col>
 
                       <Col xs={24} md={6}>
-                        <Card title="� Clienti" bordered={false} style={{ height: '100%' }}>
+                        <Card title="� Clienti" bordered={false} className="h-full">
                           <Paragraph>
                             <strong>Gestione Anagrafiche Clienti</strong><br/>
                             Visualizza e gestisci i tuoi clienti e fornitori.
@@ -109,7 +105,7 @@ function App() {
                           <Button 
                             type="default" 
                             onClick={() => window.location.href = '/clienti'}
-                            style={{ marginTop: '8px' }}
+                            className="mt-sm"
                           >
                             Vai ai Clienti
                           </Button>
@@ -117,7 +113,7 @@ function App() {
                       </Col>
 
                       <Col xs={24} md={6}>
-                        <Card title="📦 Articoli" bordered={false} style={{ height: '100%' }}>
+                        <Card title="📦 Articoli" bordered={false} className="h-full">
                           <Paragraph>
                             <strong>Gestione Magazzino</strong><br/>
                             Gestisci articoli, prezzi e categorie.
@@ -125,7 +121,7 @@ function App() {
                           <Button 
                             type="default" 
                             onClick={() => window.location.href = '/articoli'}
-                            style={{ marginTop: '8px' }}
+                            className="mt-sm"
                           >
                             Vai agli Articoli
                           </Button>
@@ -133,7 +129,7 @@ function App() {
                       </Col>
                       
                       <Col xs={24} md={6}>
-                        <Card title="🚀 Backend Status" bordered={false} style={{ height: '100%' }}>
+                        <Card title="🚀 Backend Status" bordered={false} className="h-full">
                           <Paragraph>
                             ✅ <strong>Spring Boot</strong>: Attivo<br/>
                             ✅ <strong>PostgreSQL</strong>: Connesso<br/>
@@ -143,9 +139,9 @@ function App() {
                       </Col>
                     </Row>
 
-                    <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
+                    <Row gutter={[16, 16]} className="mt-md">
                       <Col xs={24} md={12}>
-                        <Card title="⚙️ Configurazioni" bordered={false} style={{ height: '100%' }}>
+                        <Card title="⚙️ Configurazioni" bordered={false} className="h-full">
                           <Paragraph>
                             <strong>Gestione Sistema</strong><br/>
                             Configura IVA, pagamenti e numerazioni.
@@ -153,7 +149,7 @@ function App() {
                           <Button 
                             type="default" 
                             onClick={() => window.location.href = '/configurazioni'}
-                            style={{ marginTop: '8px' }}
+                            className="mt-sm"
                           >
                             Vai alle Configurazioni
                           </Button>
@@ -161,7 +157,7 @@ function App() {
                       </Col>
                       
                       <Col xs={24} md={12}>
-                        <Card title="🎨 Frontend Status" bordered={false} style={{ height: '100%' }}>
+                        <Card title="🎨 Frontend Status" bordered={false} className="h-full">
                           <Paragraph>
                             ✅ <strong>React App</strong>: Attiva<br/>
                             ✅ <strong>Ant Design UI</strong>: Caricata<br/>
@@ -173,7 +169,7 @@ function App() {
                     
                     <TestApi />
 
-                    <Card title="🎯 Test di Connessione" style={{ marginTop: 16 }}>
+                    <Card title="🎯 Test di Connessione" className="mt-md">
                       <Paragraph>
                         Il sistema di gestione documentale è completamente operativo!
                       </Paragraph>
@@ -186,6 +182,7 @@ function App() {
                     </Card>
                   </div>
                 } />
+                <Route path="/documenti" element={<DocumentiManagement />} />
                 <Route path="/setup" element={<SetupWizard />} />
                 <Route path="/aziende" element={<AziendaManagement />} />
                 <Route path="/configurazioni" element={<ConfigurazioniManagement />} />

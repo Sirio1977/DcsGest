@@ -26,14 +26,19 @@ import {
   UserOutlined,
   ShopOutlined,
 } from '@ant-design/icons';
-import { useGetClientiQuery, useDeleteClienteMutation } from '../store/api/documentiApi';
+import { useGetClientiQuery, useDeleteClienteMutation } from '../store/api/clientiApi';
 import { ClienteForm } from './forms';
-import type { Cliente } from '../store/api/documentiApi';
+import type { Cliente } from '../types/entities';
 
 const { Title } = Typography;
 const { Option } = Select;
 
-export const ClientiManagement: React.FC = () => {
+interface ClientiManagementProps {
+  clienti?: Cliente[];
+  onSuccess?: () => void;
+}
+
+export const ClientiManagement: React.FC<ClientiManagementProps> = ({ clienti = [], onSuccess = () => {} }) => {
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [isEditMode, setIsEditMode] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
@@ -42,8 +47,11 @@ export const ClientiManagement: React.FC = () => {
   const [selectedCliente, setSelectedCliente] = useState<Cliente | null>(null);
   const [isDetailModalVisible, setIsDetailModalVisible] = useState(false);
 
-  const { data: clienti, isLoading, error, refetch } = useGetClientiQuery();
+  const { data: clientiResponse, isLoading, error, refetch } = useGetClientiQuery({});
   const [deleteCliente] = useDeleteClienteMutation();
+
+  // Estrae i clienti dalla risposta paginata
+  const clientiData = clientiResponse?.content || [];
 
   const handleDelete = async (id: number) => {
     try {
@@ -83,9 +91,9 @@ export const ClientiManagement: React.FC = () => {
 
   // Filtri per i dati
   const filteredClienti = React.useMemo(() => {
-    if (!clienti) return [];
+    if (!clientiData) return [];
     
-    return clienti.filter((cliente: Cliente) => {
+    return clientiData.filter((cliente: Cliente) => {
       const matchesSearch = !searchTerm || 
         cliente.ragioneSociale.toLowerCase().includes(searchTerm.toLowerCase()) ||
         (cliente.partitaIva && cliente.partitaIva.includes(searchTerm)) ||
@@ -99,7 +107,7 @@ export const ClientiManagement: React.FC = () => {
       
       return matchesSearch && matchesTipo && matchesStatus;
     });
-  }, [clienti, searchTerm, tipoFilter, statusFilter]);
+  }, [clientiData, searchTerm, tipoFilter, statusFilter]);
 
   const getTipoIcon = (tipo: string) => {
     switch (tipo) {
@@ -239,7 +247,7 @@ export const ClientiManagement: React.FC = () => {
           />
           <Popconfirm
             title="Sei sicuro di voler eliminare questo cliente?"
-            onConfirm={() => handleDelete(record.id)}
+            onConfirm={() => record.id && handleDelete(record.id)}
             okText="Sì"
             cancelText="No"
           >
@@ -348,6 +356,8 @@ export const ClientiManagement: React.FC = () => {
           }}
           scroll={{ x: 1200 }}
           size="small"
+          tableLayout="fixed"
+          sticky={false}
         />
       </Card>
 
@@ -435,7 +445,7 @@ export const ClientiManagement: React.FC = () => {
             </Descriptions.Item>
             
             <Descriptions.Item label="Creato il" span={2}>
-              {new Date(selectedCliente.createdAt).toLocaleDateString('it-IT')}
+              {selectedCliente.createdAt ? new Date(selectedCliente.createdAt).toLocaleDateString('it-IT') : 'N/A'}
             </Descriptions.Item>
             
             {selectedCliente.note && (

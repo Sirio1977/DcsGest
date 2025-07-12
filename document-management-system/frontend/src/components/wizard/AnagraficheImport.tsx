@@ -59,8 +59,8 @@ interface Articolo {
   id: number;
   codice: string;
   descrizione: string;
-  prezzo: number;
-  categoria: string;
+  prezzoVendita: number;
+  tipo: string;
   unitaMisura: string;
 }
 
@@ -71,6 +71,7 @@ const AnagraficheImport: React.FC<Props> = ({ onNext, onPrev, initialData }) => 
   const [articoli, setArticoli] = useState<Articolo[]>([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [modalType, setModalType] = useState<'cliente' | 'fornitore' | 'articolo'>('cliente');
+  const [form] = Form.useForm();
 
   const handleSubmit = () => {
     const data = {
@@ -171,8 +172,26 @@ const AnagraficheImport: React.FC<Props> = ({ onNext, onPrev, initialData }) => 
   const articoliColumns = [
     { title: 'Codice', dataIndex: 'codice', key: 'codice' },
     { title: 'Descrizione', dataIndex: 'descrizione', key: 'descrizione' },
-    { title: 'Prezzo', dataIndex: 'prezzo', key: 'prezzo', render: (val: number) => `€${val?.toFixed(2)}` },
-    { title: 'Categoria', dataIndex: 'categoria', key: 'categoria' },
+    { title: 'Prezzo', dataIndex: 'prezzoVendita', key: 'prezzoVendita', render: (val: number) => `€${val?.toFixed(2)}` },
+    { title: 'Tipo', dataIndex: 'tipo', key: 'tipo' },
+  ];
+
+  const tabItems = [
+    {
+      key: 'clienti',
+      label: 'Clienti',
+      children: <Table dataSource={clienti} columns={clientiColumns} />,
+    },
+    {
+      key: 'fornitori',
+      label: 'Fornitori',
+      children: <Table dataSource={fornitori} columns={fornitoriColumns} />,
+    },
+    {
+      key: 'articoli',
+      label: 'Articoli',
+      children: <Table dataSource={articoli} columns={articoliColumns} />,
+    },
   ];
 
   return (
@@ -207,7 +226,7 @@ const AnagraficheImport: React.FC<Props> = ({ onNext, onPrev, initialData }) => 
 {`{
   "clienti": [{"ragioneSociale": "...", "partitaIva": "...", ...}],
   "fornitori": [{"ragioneSociale": "...", "partitaIva": "...", ...}],
-  "articoli": [{"codice": "...", "descrizione": "...", "prezzo": 0, ...}]
+  "articoli": [{"codice": "...", "descrizione": "...", "prezzoVendita": 0, ...}]
 }`}
               </pre>
             </div>
@@ -255,69 +274,11 @@ const AnagraficheImport: React.FC<Props> = ({ onNext, onPrev, initialData }) => 
           </Button.Group>
         }
       >
-        <Tabs activeKey={activeTab} onChange={setActiveTab}>
-          <TabPane 
-            tab={
-              <span>
-                <UserOutlined />
-                Clienti ({clienti.length})
-              </span>
-            } 
-            key="clienti"
-          >
-            <Table
-              dataSource={clienti}
-              columns={clientiColumns}
-              rowKey="id"
-              size="small"
-              pagination={{ pageSize: 5 }}
-              locale={{ emptyText: 'Nessun cliente inserito' }}
-            />
-          </TabPane>
-
-          <TabPane 
-            tab={
-              <span>
-                <ShopOutlined />
-                Fornitori ({fornitori.length})
-              </span>
-            } 
-            key="fornitori"
-          >
-            <Table
-              dataSource={fornitori}
-              columns={fornitoriColumns}
-              rowKey="id"
-              size="small"
-              pagination={{ pageSize: 5 }}
-              locale={{ emptyText: 'Nessun fornitore inserito' }}
-            />
-          </TabPane>
-
-          <TabPane 
-            tab={
-              <span>
-                <TagsOutlined />
-                Articoli ({articoli.length})
-              </span>
-            } 
-            key="articoli"
-          >
-            <Table
-              dataSource={articoli}
-              columns={articoliColumns}
-              rowKey="id"
-              size="small"
-              pagination={{ pageSize: 5 }}
-              locale={{ emptyText: 'Nessun articolo inserito' }}
-            />
-          </TabPane>
-        </Tabs>
+        <Tabs activeKey={activeTab} onChange={setActiveTab} items={tabItems} />
       </Card>
 
       {/* Modal per aggiunta manuale */}
       <Modal
-        title={`Nuovo ${modalType}`}
         open={modalVisible}
         onCancel={() => setModalVisible(false)}
         footer={null}
@@ -340,13 +301,13 @@ const AnagraficheImport: React.FC<Props> = ({ onNext, onPrev, initialData }) => 
               </Col>
               <Col xs={24} md={12}>
                 <Form.Item
-                  label="Categoria"
-                  name="categoria"
+                  label="Tipo"
+                  name="tipo"
                 >
-                  <Select placeholder="Seleziona categoria">
-                    <Select.Option value="prodotti">Prodotti</Select.Option>
-                    <Select.Option value="servizi">Servizi</Select.Option>
-                    <Select.Option value="materiali">Materiali</Select.Option>
+                  <Select placeholder="Seleziona tipo">
+                    <Select.Option value="prodotto">Prodotto</Select.Option>
+                    <Select.Option value="servizio">Servizio</Select.Option>
+                    <Select.Option value="materiale">Materiale</Select.Option>
                   </Select>
                 </Form.Item>
               </Col>
@@ -362,7 +323,7 @@ const AnagraficheImport: React.FC<Props> = ({ onNext, onPrev, initialData }) => 
               <Col xs={24} md={12}>
                 <Form.Item
                   label="Prezzo"
-                  name="prezzo"
+                  name="prezzoVendita"
                   rules={[{ required: true, message: 'Inserisci il prezzo' }]}
                 >
                   <Input 

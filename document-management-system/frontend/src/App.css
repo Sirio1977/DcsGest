@@ -1,14 +1,12 @@
-.App {
-  text-align: center;
-}
+/* =====================================================
+   APP.CSS - STILI SPECIFICI PER IL COMPONENTE APP
+   ===================================================== */
 
-.App-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-}
+/* File mantenuto per compatibilità ma gli stili sono ora nel nuovo sistema modulare */
 
-.ant-layout-header {
-  display: flex;
-  align-items: center;
+/* Eventuali stili specifici solo per App possono essere aggiunti qui */
+
+/* Override specifici per l'app se necessari */
+.app-specific-override {
+  /* Placeholder per stili specifici dell'app */
 }

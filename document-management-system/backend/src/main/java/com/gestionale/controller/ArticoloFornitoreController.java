@@ -22,7 +22,23 @@ public class ArticoloFornitoreController {
     private ArticoloFornitoreService articoloFornitoreService;
     
     @GetMapping
-    public List<ArticoloFornitore> getAllArticoliFornitori() {
+    public ResponseEntity<Page<ArticoloFornitore>> getAllArticoliFornitori(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "20") int size,
+            @RequestParam(defaultValue = "descrizione") String sortBy,
+            @RequestParam(defaultValue = "asc") String sortDir) {
+        
+        Pageable pageable = PageRequest.of(page, size, 
+            sortDir.equals("desc") ? 
+                org.springframework.data.domain.Sort.by(sortBy).descending() : 
+                org.springframework.data.domain.Sort.by(sortBy).ascending()
+        );
+        Page<ArticoloFornitore> articoliFornitori = articoloFornitoreService.getArticoliFornitoriPaginati(pageable);
+        return ResponseEntity.ok(articoliFornitori);
+    }
+    
+    @GetMapping("/all")
+    public List<ArticoloFornitore> getAllArticoliFornitoriNonPaginati() {
         return articoloFornitoreService.getAllArticoliFornitori();
     }
     

@@ -22,6 +22,8 @@ public interface DocumentoMapper {
     @Mapping(target = "stato", ignore = true)
     Documento toEntity(DocumentoCreateDto dto);
 
+    @Mapping(target = "tipoDocumento", source = "tipoDocumento")
+    @Mapping(target = "statoDocumento", source = "stato")
     DocumentoResponseDto toResponseDto(Documento entity);
 
     List<DocumentoResponseDto> toResponseDtoList(List<Documento> entities);
@@ -57,5 +59,22 @@ public interface DocumentoMapper {
     default com.gestionale.enums.AliquotaIva map(BigDecimal percentuale) {
         if (percentuale == null) return null;
         return com.gestionale.enums.AliquotaIva.byPercentuale(percentuale.doubleValue());
+    }
+
+    // Conversioni per enum to String
+    default String map(TipoDocumento tipo) {
+        return tipo != null ? tipo.toString() : null;
+    }
+
+    default String map(StatoDocumento stato) {
+        return stato != null ? stato.toString() : null;
+    }
+
+    default String map(ModalitaPagamento modalita) {
+        return modalita != null ? modalita.toString() : null;
+    }
+
+    default String map(CausaleTrasporto causale) {
+        return causale != null ? causale.toString() : null;
     }
 }

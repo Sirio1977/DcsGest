@@ -15,8 +15,8 @@ import {
 import {
   useCreateArticoloFornitoreMutation,
   useUpdateArticoloFornitoreMutation,
-  type ArticoloFornitore,
-} from '../../store/api/documentiApi';
+} from '../../store/api/articoliFornitoriApi';
+import type { ArticoloFornitore } from '../../types/entities';
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -226,17 +226,17 @@ export const ArticoloFornitoreForm: React.FC<ArticoloFornitoreFormProps> = ({
           </Form.Item>
         </div>
 
-        {isEditMode && articoloFornitore?.createdAt && (
+        {isEditMode && articoloFornitore?.dataDocumento && (
           <Descriptions size="small" column={2} style={{ marginTop: 16 }}>
-            <Descriptions.Item label="Creato il">
+            <Descriptions.Item label="Data Documento">
               <Text type="secondary">
-                {new Date(articoloFornitore.createdAt).toLocaleString('it-IT')}
+                {articoloFornitore.dataDocumento}
               </Text>
             </Descriptions.Item>
-            {articoloFornitore.updatedAt && (
-              <Descriptions.Item label="Ultima modifica">
+            {articoloFornitore.dataUltimoAggiornamento && (
+              <Descriptions.Item label="Ultimo Aggiornamento">
                 <Text type="secondary">
-                  {new Date(articoloFornitore.updatedAt).toLocaleString('it-IT')}
+                  {articoloFornitore.dataUltimoAggiornamento}
                 </Text>
               </Descriptions.Item>
             )}

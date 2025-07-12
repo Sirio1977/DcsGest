@@ -22,7 +22,23 @@ public class ClienteController {
     private ClienteService clienteService;
     
     @GetMapping
-    public List<Cliente> getAllClienti() {
+    public ResponseEntity<Page<Cliente>> getAllClienti(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "20") int size,
+            @RequestParam(defaultValue = "ragioneSociale") String sortBy,
+            @RequestParam(defaultValue = "asc") String sortDir) {
+        
+        Pageable pageable = PageRequest.of(page, size, 
+            sortDir.equals("desc") ? 
+                org.springframework.data.domain.Sort.by(sortBy).descending() : 
+                org.springframework.data.domain.Sort.by(sortBy).ascending()
+        );
+        Page<Cliente> clienti = clienteService.getClientiPaginati(pageable);
+        return ResponseEntity.ok(clienti);
+    }
+    
+    @GetMapping("/all")
+    public List<Cliente> getAllClientiNonPaginati() {
         return clienteService.getAllClienti();
     }
     

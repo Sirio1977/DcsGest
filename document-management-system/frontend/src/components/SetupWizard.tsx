@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Steps, Card, Button, Row, Col, Typography, Progress } from 'antd';
+import { Steps, Card, Button, Row, Col, Typography, Progress, Tabs, Modal, Form } from 'antd';
 import { 
   BankOutlined, 
   SettingOutlined, 
@@ -25,6 +25,7 @@ const SetupWizard: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [setupData, setSetupData] = useState<SetupData>({});
   const [loading, setLoading] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
 
   const steps = [
     {
@@ -173,6 +174,19 @@ const SetupWizard: React.FC = () => {
 
   const completionPercentage = ((currentStep + 1) / steps.length) * 100;
 
+  const setupSteps = [
+    {
+      key: 'step1',
+      label: 'Step 1',
+      children: <div>Content for Step 1</div>,
+    },
+    {
+      key: 'step2',
+      label: 'Step 2',
+      children: <div>Content for Step 2</div>,
+    },
+  ];
+
   return (
     <div style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto' }}>
       <Card>
@@ -229,11 +243,29 @@ const SetupWizard: React.FC = () => {
               }
               style={{ minHeight: '500px' }}
             >
-              {renderStepContent()}
+              <Tabs 
+                items={setupSteps} 
+                activeKey={`step${currentStep + 1}`}
+                onChange={(key) => {
+                  const stepIndex = parseInt(key.replace('step', '')) - 1;
+                  setCurrentStep(stepIndex);
+                }}
+                tabBarStyle={{ display: 'none' }}
+              />
             </Card>
           </Col>
         </Row>
       </Card>
+
+      <Modal
+        open={modalVisible}
+        onCancel={() => setModalVisible(false)}
+        footer={null}
+      >
+        <Form onFinish={handleFinish}>
+          {/* Form content */}
+        </Form>
+      </Modal>
     </div>
   );
 };

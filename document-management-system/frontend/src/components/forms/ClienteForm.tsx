@@ -15,7 +15,8 @@ import {
   Col
 } from 'antd';
 import { SaveOutlined, CloseOutlined } from '@ant-design/icons';
-import { useCreateClienteMutation, useUpdateClienteMutation, Cliente } from '../../store/api/documentiApi';
+import { useCreateClienteMutation, useUpdateClienteMutation } from '../../store/api/clientiApi';
+import type { Cliente } from '../../types/entities';
 
 const { TabPane } = Tabs;
 const { Title } = Typography;
